@@ -1,4 +1,4 @@
-#include "BinTree.h"
+#include "bintree.h"
 #include <iostream>
 
 int main()

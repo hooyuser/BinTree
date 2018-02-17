@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BinTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="stack.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bintree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

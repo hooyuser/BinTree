@@ -115,7 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="BinTree.h" />
+    <ClInclude Include="bintree.h" />
     <ClInclude Include="stack.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
