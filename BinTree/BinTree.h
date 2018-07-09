@@ -9,7 +9,7 @@
 
 
 
-#define BinNodePosi(T) BinNode<T> * //½ÚµãÎ»ÖÃ
+#define BinNodePosi(T) BinNode<T> * //½ÚµãÎ»ÖÃ£¬¼´Ö¸ÏòBinNode¶ÔÏóµÄÖ¸Õë
 #define stature(p) ((p) ? (p)->height : -1) //½Úµã¸ß¶È£¨Óë¡°¿ÕÊ÷¸ß¶ÈÎª-1¡±µÄÔ¼¶¨ÏàÍ³Ò»£©
 typedef enum { RB_RED, RB_BLACK } RBColor; //½ÚµãÑÕÉ«
 
@@ -17,24 +17,24 @@ typedef enum { RB_RED, RB_BLACK } RBColor; //½ÚµãÑÕÉ«
 /******************************************************************************************
 * BinNode×´Ì¬ÓëĞÔÖÊµÄÅĞ¶Ï
 ******************************************************************************************/
-#define IsRoot(x) (!((x).parent))
-#define IsLChild(x) (!IsRoot(x) && (&(x) == (x).parent->lc))
-#define IsRChild(x) (!IsRoot(x) && (&(x) == (x).parent->rc))
+#define IsRoot(x) (!((x).parent)) //ÅĞ¶Ï½ÚµãxÊÇ·ñÎª¸ù½Úµã
+#define IsLChild(x) (!IsRoot(x) && (&(x) == (x).parent->lc)) //ÅĞ¶Ï½ÚµãxÊÇ·ñÎªÄ³Ò»½ÚµãµÄ×óº¢×Ó
+#define IsRChild(x) (!IsRoot(x) && (&(x) == (x).parent->rc)) //ÅĞ¶Ï½ÚµãxÊÇ·ñÎªÄ³Ò»½ÚµãµÄÓÒº¢×Ó
 #define HasParent(x) (!IsRoot(x))
-#define HasLChild(x) ((x).lc)
-#define HasRChild(x) ((x).rc)
-#define HasChild(x) (HasLChild(x) || HasRChild(x)) //ÖÁÉÙÓµÓĞÒ»¸öº¢×Ó
-#define HasBothChild(x) (HasLChild(x) && HasRChild(x)) //Í¬Ê±ÓµÓĞÁ½¸öº¢×Ó
-#define IsLeaf(x) (!HasChild(x))
+#define HasLChild(x) ((x).lc) //ÅĞ¶Ï½ÚµãxÊÇ·ñÓµÓĞ×óº¢×Ó
+#define HasRChild(x) ((x).rc) //ÅĞ¶Ï½ÚµãxÊÇ·ñÓµÓĞÓÒº¢×Ó
+#define HasChild(x) (HasLChild(x) || HasRChild(x)) //ÅĞ¶Ï½ÚµãxÊÇ·ñÖÁÉÙÓµÓĞÒ»¸öº¢×Ó
+#define HasBothChild(x) (HasLChild(x) && HasRChild(x)) //ÅĞ¶Ï½ÚµãxÊÇ·ñÍ¬Ê±ÓµÓĞÁ½¸öº¢×Ó
+#define IsLeaf(x) (!HasChild(x)) //ÅĞ¶Ï½ÚµãxÊÇ·ñÎªÒ¶½Úµã
 
 /******************************************************************************************
 * ÓëBinNode¾ßÓĞÌØ¶¨¹ØÏµµÄ½Úµã¼°Ö¸Õë
 ******************************************************************************************/
-#define sibling(p) (IsLChild(*(p)) ? (p)->parent->rc : (p)->parent->lc ) //ĞÖµÜ
+#define sibling(p) (IsLChild(*(p)) ? (p)->parent->rc : (p)->parent->lc ) //·µ»ØÖ¸ÕëpËùÖ¸½ÚµãµÄĞÖµÜµÄÖ¸Õë
+#define uncle(p) sibling((p)->parent) //·µ»ØÖ¸ÕëpËùÖ¸½ÚµãµÄÊåÊåµÄÖ¸Õë
+#define FromParentTo(x) (IsRoot(x) ? _root : ( IsLChild(x) ? (x).parent->lc : (x).parent->rc ) ) //·µ»Ø½ÚµãxµÄ¸¸Ç×ÓµÓĞµÄÒ»¸öÖ¸Õë£¬¸ÃÖ¸ÕëÖ¸Ïòx×ÔÉí
+//#define uncle(x) (IsLChild(*((x)->parent)) ? (x)->parent->parent->rc : (x)->parent->parent->lc ) //ÊåÊå
 
-#define uncle(x) (IsLChild(*((x)->parent)) ? (x)->parent->parent->rc : (x)->parent->parent->lc ) //ÊåÊå
-
-#define FromParentTo(x) (IsRoot(x) ? _root : ( IsLChild(x) ? (x).parent->lc : (x).parent->rc ) ) //À´×Ô¸¸Ç×µÄÖ¸Õë
 
 using namespace std;
 
@@ -63,8 +63,11 @@ struct Cleaner
 	}
 };
 
-template <typename T> struct Cleaner<T*> {
-	static void clean(T* x) {
+template <typename T>
+struct Cleaner<T*>
+{
+	static void clean(T* x)
+	{
 		if (x) { delete x; } //Èç¹ûÆäÖĞ°üº¬Ö¸Õë£¬µİ¹éÊÍ·Å
 #ifdef _DEBUG
 		static int n = 0;
@@ -124,7 +127,11 @@ public:
 	}
 };
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////
 /*¶ş²æÊ÷½ÚµãÄ£°åÀàÊµÏÖ*/
+///////////////////////////////////////////////////////////////////////////////////////////////
+
 template <typename T>
 int BinNode<T>::size() //Í³¼Æµ±Ç°½Úµãºó´ú×ÜÊı£¬¼´ÒÔÆäÎª¸ùµÄ×ÓÊ÷¹æÄ£
 {
@@ -192,8 +199,8 @@ void BinNode<T>::travPre(VST& visit)
 }
 
 template <typename T, typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
-void travPre_I1(BinNodePosi(T) x, VST& visit)
-{ //¶ş²æÊ÷ÏÈĞò±éÀúËã·¨£¨µü´ú°æ#1£©
+void travPre_I1(BinNodePosi(T) x, VST& visit) //¶ş²æÊ÷ÏÈĞò±éÀúËã·¨£¨µü´ú°æ#1£©
+{
 	Stack<BinNodePosi(T)> S; //¸¨ÖúÕ»
 	if (x)
 		S.push(x); //¸ù½ÚµãÈëÕ»
@@ -227,10 +234,18 @@ void travPre_I2(BinNodePosi(T) x, VST& visit)  //¶ş²æÊ÷ÏÈĞò±éÀúËã·¨£¨µü´ú°æ#2£©
 	while (true)
 	{
 		visitAlongVine(x, visit, S); //´Óµ±Ç°½Úµã³ö·¢£¬ÖğÅú·ÃÎÊ
-		if (S.empty())
-			break; //Ö±µ½Õ»¿Õ
+		if (S.empty()) break; //ÈôÕ»¿Õ£¬ÔòÍË³öÑ­»·
 		x = S.pop(); //µ¯³öÏÂÒ»ÅúµÄÆğµã
 	}
+}
+
+template <typename T, typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
+void travPre_R(BinNodePosi(T) x, VST& visit) //¶ş²æÊ÷ÏÈĞò±éÀúËã·¨£¨µİ¹é°æ£©
+{
+	if (!x) return;
+	visit(x->data);
+	travPre_R(x->lc, visit);
+	travPre_R(x->rc, visit);
 }
 
 template <typename T> template <typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
@@ -244,7 +259,37 @@ void BinNode<T>::travIn(VST& visit)  //¶ş²æÊ÷ÖĞĞò±éÀúËã·¨Í³Ò»Èë¿Ú
 	case 4: travIn_I4(this, visit); break; //µü´ú°æ#4
 	default: travIn_R(this, visit); break; //µİ¹é°æ
 	}
+}
 
+template <typename T> //´Óµ±Ç°½Úµã³ö·¢£¬ÑØ×ó·ÖÖ§²»¶ÏÉîÈë£¬Ö±ÖÁÃ»ÓĞ×ó·ÖÖ§µÄ½Úµã
+static void goAlongVine(BinNodePosi(T) x, Stack<BinNodePosi(T)>& S) 
+{
+	while (x) 
+	{ 
+		S.push(x); 
+		x = x->lc; 
+	} //µ±Ç°½ÚµãÈëÕ»ºóËæ¼´Ïò×ó²à·ÖÖ§ÉîÈë£¬µü´úÖ±µ½ÎŞ×óº¢×Ó
+}
+
+template <typename T, typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
+void travIn_I1(BinNodePosi(T) x, VST& visit) { //¶ş²æÊ÷ÖĞĞò±éÀúËã·¨£¨µü´ú°æ#1£©
+	Stack<BinNodePosi(T)> S; //¸¨ÖúÕ»
+	while (true) {
+		goAlongVine(x, S); //´Óµ±Ç°½Úµã³ö·¢£¬ÖğÅúÈëÕ»
+		if (S.empty()) break; //Ö±ÖÁËùÓĞ½Úµã´¦ÀíÍê±Ï
+		x = S.pop(); 
+		visit(x->data); //µ¯³öÕ»¶¥½Úµã²¢·ÃÎÊÖ®
+		x = x->rc; //×ªÏòÓÒ×ÓÊ÷
+	}
+}
+
+template <typename T, typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
+void travIn_R(BinNodePosi(T) x, VST& visit)
+{ //¶ş²æÊ÷ÖĞĞò±éÀúËã·¨£¨µİ¹é°æ£©
+	if (!x) return;
+	travIn_R(x->lc, visit);
+	visit(x->data);
+	travIn_R(x->rc, visit);
 }
 
 template <typename T> template <typename VST> //ÔªËØÀàĞÍ¡¢²Ù×÷Æ÷
@@ -266,7 +311,7 @@ class BinTree
 {
 protected:
 	int _size; //¹æÄ£
-	BinNodePosi(T) _root; //¸ù½Úµã
+	BinNodePosi(T) _root; //¸ù½ÚµãÖ¸Õë
 	virtual int updateHeight(BinNodePosi(T) x); //¸üĞÂ½ÚµãxµÄ¸ß¶È
 	void updateHeightAbove(BinNodePosi(T) x); //¸üĞÂ½Úµãx¼°Æä×æÏÈµÄ¸ß¶È
 public:
@@ -393,8 +438,8 @@ BinNodePosi(T) BinTree<T>::insertAsRC(BinNodePosi(T) x, T const& e)  //e²åÈëÎªxµ
 template <typename T> //¶ş²æÊ÷×ÓÊ÷½ÓÈëËã·¨£º½«Sµ±×÷½ÚµãxµÄ×ó×ÓÊ÷½ÓÈë£¬S±¾ÉíÖÃ¿Õ
 BinNodePosi(T) BinTree<T>::attachAsLC(BinNodePosi(T) x, BinTree<T>* &S)
 { //x->lc == NULL
-	if (x->lc = S->_root)
-		x->lc->parent = x; //½ÓÈë
+	if (x->lc = S->_root) //½«Ê÷S¸ù½ÚµãÉèÖÃÎªxµÄ×óº¢×Ó¡£Èç¹ûS->_root²»ÎªNULL
+		x->lc->parent = x;  //Ôò½«xÉèÖÃÎªÊ÷S¸ù½ÚµãµÄ¸¸Ç×
 	_size += S->_size;
 	updateHeightAbove(x); //¸üĞÂÈ«Ê÷¹æÄ£ÓëxËùÓĞ×æÏÈµÄ¸ß¶È
 	S->_root = NULL;
