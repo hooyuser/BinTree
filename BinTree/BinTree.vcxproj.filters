@@ -15,19 +15,19 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stack.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="vector.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="bintree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="List.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="queue.h">
+    <ClInclude Include="BinTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Queue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Stack.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

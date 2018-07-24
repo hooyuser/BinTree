@@ -115,11 +115,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="bintree.h" />
+    <ClInclude Include="BinTree.h" />
     <ClInclude Include="List.h" />
-    <ClInclude Include="queue.h" />
-    <ClInclude Include="stack.h" />
-    <ClInclude Include="vector.h" />
+    <ClInclude Include="Queue.h" />
+    <ClInclude Include="Stack.h" />
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

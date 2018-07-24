@@ -1,2 +1,2 @@
-#define BinNodePosi(T)#define ListNodePosi
-#define ListNodePosi
+#define BinNodePosi(T) BinNode<T> * 
+#define ListNodePosi(T) ListNode<T> *
