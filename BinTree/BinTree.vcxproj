@@ -116,11 +116,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="bintree.h" />
+    <ClInclude Include="List.h" />
+    <ClInclude Include="queue.h" />
     <ClInclude Include="stack.h" />
     <ClInclude Include="vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

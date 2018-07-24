@@ -5,8 +5,8 @@
 #include <algorithm>
 #include <typeinfo.h>
 #include "stack.h"
-#include "vector.h"
-
+//#include "vector.h"
+#include "queue.h"
 
 
 #define BinNodePosi(T) BinNode<T> * //节点位置，即指向BinNode对象的指针
@@ -69,7 +69,7 @@ struct Cleaner<T*>
 	static void clean(T* x)
 	{
 		if (x) { delete x; } //如果其中包含指针，递归释放
-#ifdef _DEBUG
+#ifdef _DEBUG                
 		static int n = 0;
 		printf("\t<%s>[%d] released\n", typeid (T*).name(), ++n);
 #endif
@@ -312,7 +312,7 @@ class BinTree
 protected:
 	int _size; //规模
 	BinNodePosi(T) _root; //根节点指针
-	virtual int updateHeight(BinNodePosi(T) x); //更新节点x的高度
+	virtual int updateHeight(BinNodePosi(T) x); //根据子树高度更新节点x的高度
 	void updateHeightAbove(BinNodePosi(T) x); //更新节点x及其祖先的高度
 public:
 	BinTree() : _size(0), _root(NULL) { } //构造函数

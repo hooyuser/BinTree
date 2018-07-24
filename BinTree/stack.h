@@ -9,17 +9,17 @@ class Stack :public Vector<T>
 public:
 	void push(T const& e)
 	{
-		insert(size(), e);
+		insert(this->size(), e);
 	}
 
 	T pop()
 	{
-		return remove(size() - 1);
+		return remove(this->size() - 1);
 	}
 
 	T& top()
 	{
-		return (*this)[size() - 1];
+		return (*this)[this->size() - 1];
 	}
 };
 
