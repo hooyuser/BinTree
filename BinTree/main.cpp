@@ -15,6 +15,6 @@ int main()
 
 	myBinTree1->attachAsLC(BinNode2, myBinTree2);
 
-	system("PAUSE");
+	//system("PAUSE");
 	return 0;
 }

@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_queue_8h" kind="file">
+    <compoundname>Queue.h</compoundname>
+    <includes refid="_list_8h" local="yes">List.h</includes>
+    <includedby refid="_bin_tree_8h" local="yes">D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h</includedby>
+    <incdepgraph>
+      <node id="28">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h</label>
+        <link refid="Queue.h"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>List.h</label>
+        <link refid="_list_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="30">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h</label>
+        <link refid="Queue.h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h</label>
+        <link refid="_bin_tree_8h"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_queue" prot="public">Queue</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>QUEUE_H_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>QUEUE_H_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_list_8h" kindref="compound">List.h</ref>&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//以List为基类</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_queue" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_queue" kindref="compound">Queue</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_list" kindref="compound">List</ref>&lt;T&gt;<sp/>{<sp/></highlight><highlight class="comment">//队列模板类（继承List原有接口）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:<sp/></highlight><highlight class="comment">//size()、empty()以及其它开放接口均可直接沿用</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_queue_1af50d72a629d7a94a769864fdab163420" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_queue_1af50d72a629d7a94a769864fdab163420" kindref="member">enqueue</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/><ref refid="class_list_1a0b937d056c2cc96d12e594f9647d5cfc" kindref="member">e</ref>)<sp/>{<sp/>insertAsLast(e);<sp/>}<sp/></highlight><highlight class="comment">//入队：尾部插入</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_queue_1a036f122e9bf968c80ccd73b9d38017c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="class_queue_1a036f122e9bf968c80ccd73b9d38017c0" kindref="member">dequeue</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(this-&gt;first());<sp/>}<sp/></highlight><highlight class="comment">//出队：首部删除</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_queue_1a20bfe4dbbb985a055631c50a19d451bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="class_queue_1a20bfe4dbbb985a055631c50a19d451bc" kindref="member">front</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;first()-&gt;data;<sp/>}<sp/></highlight><highlight class="comment">//队首</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h"/>
+  </compounddef>
+</doxygen>

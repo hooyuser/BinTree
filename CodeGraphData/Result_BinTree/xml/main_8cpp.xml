@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes refid="_bin_tree_8h" local="yes">BinTree.h</includes>
+    <includes local="no">iostream</includes>
+    <incdepgraph>
+      <node id="24">
+        <label>queue.h</label>
+        <link refid="_queue_8h"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>BinTree.h</label>
+        <link refid="_bin_tree_8h"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>typeinfo.h</label>
+      </node>
+      <node id="25">
+        <label>List.h</label>
+        <link refid="_list_8h"/>
+      </node>
+      <node id="22">
+        <label>vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>time.h</label>
+      </node>
+      <node id="26">
+        <label>iostream</label>
+      </node>
+      <node id="21">
+        <label>stack.h</label>
+        <link refid="_stack_8h"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>algorithm</label>
+      </node>
+      <node id="18">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp" line="4" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp" bodystart="4" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bin_tree_8h" kindref="compound">BinTree.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bin_tree" kindref="compound">BinTree&lt;int&gt;</ref>*<sp/>myBinTree1<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_bin_tree" kindref="compound">BinTree&lt;int&gt;</ref>();</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>myBinTree1-&gt;insertAsRoot(1);</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bin_node" kindref="compound">BinNode&lt;int&gt;</ref>*<sp/>BinNode2<sp/>=<sp/>myBinTree1-&gt;insertAsLC(myBinTree1-&gt;root(),<sp/>2);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>myBinTree1-&gt;insertAsRC(myBinTree1-&gt;root(),<sp/>3);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_bin_tree" kindref="compound">BinTree&lt;int&gt;</ref>*<sp/>myBinTree2<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_bin_tree" kindref="compound">BinTree&lt;int&gt;</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>myBinTree2-&gt;insertAsRoot(4);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>myBinTree2-&gt;insertAsLC(myBinTree2-&gt;root(),<sp/>5);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>myBinTree2-&gt;insertAsRC(myBinTree2-&gt;root(),<sp/>6);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>myBinTree1-&gt;attachAsLC(BinNode2,<sp/>myBinTree2);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//system(&quot;PAUSE&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp"/>
+  </compounddef>
+</doxygen>

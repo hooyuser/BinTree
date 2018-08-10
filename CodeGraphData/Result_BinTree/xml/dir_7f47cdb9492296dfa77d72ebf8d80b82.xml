@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_7f47cdb9492296dfa77d72ebf8d80b82" kind="dir">
+    <compoundname>D:/CHY/Program</compoundname>
+    <innerdir refid="dir_78ed4d8da432331d329c22ea5ea28d93">D:/CHY/Program/C++</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/CHY/Program/"/>
+  </compounddef>
+</doxygen>

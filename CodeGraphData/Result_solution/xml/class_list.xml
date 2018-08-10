@@ -1,0 +1,863 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_list" kind="class" prot="public">
+    <compoundname>List</compoundname>
+    <derivedcompoundref refid="class_queue" prot="public" virt="non-virtual">Queue&lt; T &gt;</derivedcompoundref>
+    <includes refid="_list_8h" local="no">List.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_list_1ad56fcbd2da2271dce020bb933349cba4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="35" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_list_1afb61a226f22e12743d0396f29e244824" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="111" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_list_1a0b937d056c2cc96d12e594f9647d5cfc" prot="public" static="no" mutable="no">
+        <type>T const &amp;</type>
+        <definition>T const &amp; List&lt; T &gt;::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="131" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_list_1a227a06c8fafefeec997b372cffcb282e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) header</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ac9c76b12a1bcf9d6908bb202c7cbb7c8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) trailer</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="37" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_list_1a71317037748180534e54d3ff01f875a1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="40" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="240" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a503c45a9fa1c1b6cd144c6d90d4d6f62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="42" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="331" bodyend="337"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a94fcf6de95789700b7209c0f39292c7c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::copyNodes</definition>
+        <argsstring>(ListNodePosi(T) p, int n)</argsstring>
+        <name>copyNodes</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="44" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="191" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a4eaee2170920805bef1234f96aa58fbe" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::merge</definition>
+        <argsstring>(ListNodePosi(T)&amp;pp, int n, List&lt; T &gt; &amp;L, ListNodePosi(T) q, int m)</argsstring>
+        <name>merge</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)&amp;</type>
+          <declname>pp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type><ref refid="class_list" kindref="compound">List</ref>&lt; T &gt; &amp;</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>q</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="46" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="219" bodyend="236"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+        <references refid="class_list_1afa020c0e05021aba5138f75e8cff9fd2" compoundref="_list_8h" startline="312" endline="320">List&lt; T &gt;::remove</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a1ca15b61836a2f27255d1d8baec4c654" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::mergeSort</definition>
+        <argsstring>(ListNodePosi(T)&amp;p, int n)</argsstring>
+        <name>mergeSort</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)&amp;</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="48" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="203" bodyend="215"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ac8aa25bd64067f7411552e482d72c36f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::selectionSort</definition>
+        <argsstring>(ListNodePosi(T) p, int n)</argsstring>
+        <name>selectionSort</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="50" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="444" bodyend="458"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" compoundref="_list_8h" startline="417">n</references>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+        <references refid="_list_8h_1a0f3cacbff904e29ac28270c196660354">while</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a5f056da1661722bb64bf3edc7572c9c2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::insertionSort</definition>
+        <argsstring>(ListNodePosi(T) p, int n)</argsstring>
+        <name>insertionSort</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="52" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="462" bodyend="470"/>
+        <references refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" compoundref="_list_8h" startline="417">n</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_list_1a5c5e27671b21b3815d4e25b953c69454" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::List</definition>
+        <argsstring>()</argsstring>
+        <name>List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="56" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a47912745b8fdc670d6c71d86fe4aace5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::List</definition>
+        <argsstring>(List&lt; T &gt; const &amp;L)</argsstring>
+        <name>List</name>
+        <param>
+          <type><ref refid="class_list" kindref="compound">List</ref>&lt; T &gt; const &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="61" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="61" bodyend="64"/>
+        <references refid="class_list_1adaf7d93d54b029790ccf98f521ec8837" compoundref="_list_8h" startline="77" endline="80">List&lt; T &gt;::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a247e8c2db3cc2b1d5e688ca8e58ca1ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::List</definition>
+        <argsstring>(List&lt; T &gt; const &amp;L, Rank r, int n)</argsstring>
+        <name>List</name>
+        <param>
+          <type><ref refid="class_list" kindref="compound">List</ref>&lt; T &gt; const &amp;</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="66" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="251" bodyend="257"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1adf64f5f688a32f56ee6ac60fbac84a8b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::List</definition>
+        <argsstring>(ListNodePosi(T) p, int n)</argsstring>
+        <name>List</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="68" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="68" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a2b58189090f6e5ce52939c9195e59e85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::~List</definition>
+        <argsstring>()</argsstring>
+        <name>~List</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="74" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="261" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1adaf7d93d54b029790ccf98f521ec8837" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank List&lt; T &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="77" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="77" bodyend="80"/>
+        <referencedby refid="class_list_1a47912745b8fdc670d6c71d86fe4aace5" compoundref="_list_8h" startline="61" endline="64">List&lt; T &gt;::List</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ad96bf379b8e75539b20ad30d10f10269" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool List&lt; T &gt;::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="82" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="82" bodyend="85"/>
+        <referencedby refid="class_bin_node_1a80367bc6fb96d3dcd1f81509e263b811" compoundref="_bin_tree_8h" startline="179" endline="190">BinNode&lt; T &gt;::travLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a1d2aa7b5544f5dee3e38f63bade6dc66" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; List&lt; T &gt;::operator[]</definition>
+        <argsstring>(Rank r) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="87" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="270" bodyend="276"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a07d4d9eac772dbdd50f59a34a107fc05" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) first() const </argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="89" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="89" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a9c99e57e47cceed01befeed89a81a531" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) last() const </argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="94" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="94" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a4d0d8420d56bb1ab184bfbeb190ee710" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool List&lt; T &gt;::valid</definition>
+        <argsstring>(ListNodePosi(T) p)</argsstring>
+        <name>valid</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="99" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="99" bodyend="102"/>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a7f9880a8bf94b206cee429d7bfa98001" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::disordered</definition>
+        <argsstring>() const </argsstring>
+        <name>disordered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="104" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="389" bodyend="400"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" compoundref="_list_8h" startline="417">n</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a147bb29ce3e2fc5b91755d19cb01926f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) find(T const &amp;e) const </argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="106" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1aedbaf0d1ca185cca29a93203e7313c0c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) find(T const &amp;e</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) p) const </argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a5f138d05db90af9091585bd0931ee1ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) search(T const &amp;e) const </argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="113" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a08952d5b6d65436b3218c8ee8259e537" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) search(T const &amp;e</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) p) const </argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1adca6bd9668e89893dfca69955db201bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) selectMax(ListNodePosi(T) p</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ac18f3e0b2ffaf2af0b7562077ebcdbcb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) selectMax()</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="121" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a658e4c73ab10ce85633ed69b61d042f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) insertAsFirst(T const &amp;e)</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1ae5361994abae18e5f605cd13e2f2823c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) insertAsLast(T const &amp;e)</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1aa7ae016bd7facc1dab73eb54f5cf3fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) insertA(ListNodePosi(T) p</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1aabb04ef20bd3a3cc9e226bdd72824f85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>List&lt; T &gt;::ListNodePosi</definition>
+        <argsstring>(T) insertB(ListNodePosi(T) p</argsstring>
+        <name>ListNodePosi</name>
+        <param>
+          <type>T</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1afa020c0e05021aba5138f75e8cff9fd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T List&lt; T &gt;::remove</definition>
+        <argsstring>(ListNodePosi(T) p)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="135" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="312" bodyend="320"/>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+        <referencedby refid="class_list_1a4eaee2170920805bef1234f96aa58fbe" compoundref="_list_8h" startline="219" endline="236">List&lt; T &gt;::merge</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1aad52d855405114c998d415c77eb78183" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::merge</definition>
+        <argsstring>(List&lt; T &gt; &amp;L)</argsstring>
+        <name>merge</name>
+        <param>
+          <type><ref refid="class_list" kindref="compound">List</ref>&lt; T &gt; &amp;</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="137" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a5d88833fa5e0ee6cba3d1aef3eec0499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::sort</definition>
+        <argsstring>(ListNodePosi(T) p, int n)</argsstring>
+        <name>sort</name>
+        <param>
+          <type><ref refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kindref="member">ListNodePosi</ref>(T)</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="142" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="324" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1adcdf869b2506e2332052eff47afc8412" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::sort</definition>
+        <argsstring>()</argsstring>
+        <name>sort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="144" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a04815240174e3eb63b6c9c6f647138ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::deduplicate</definition>
+        <argsstring>()</argsstring>
+        <name>deduplicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="149" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="342" bodyend="356"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a0c2aafff2b9e0ba54359dcb59f627f7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int List&lt; T &gt;::uniquify</definition>
+        <argsstring>()</argsstring>
+        <name>uniquify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="151" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="360" bodyend="375"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a6066ea09838e1a42bec3098d18e85fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::reverse</definition>
+        <argsstring>()</argsstring>
+        <name>reverse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="153" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="379" bodyend="385"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+        <references refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" compoundref="_list_8h" startline="425">p</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a6572713c78d660cd5f354588432be185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void List&lt; T &gt;::traverse</definition>
+        <argsstring>(void(*visit)(T &amp;))</argsstring>
+        <name>traverse</name>
+        <param>
+          <type>void(*)(T &amp;)</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="156" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="473" bodyend="476"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+      </memberdef>
+      <memberdef kind="function" id="class_list_1a0e4c1352f77c6015725eecffe38e4c8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void List&lt; T &gt;::traverse</definition>
+        <argsstring>(VST &amp;visit)</argsstring>
+        <name>traverse</name>
+        <param>
+          <type>VST &amp;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="159" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="479" bodyend="482"/>
+        <references refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf">ListNode&lt; T &gt;::ListNodePosi</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>Queue&lt; T &gt;</label>
+        <link refid="class_queue"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>List&lt; T &gt;</label>
+        <link refid="class_list"/>
+      </node>
+    </inheritancegraph>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" line="33" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/List.h" bodystart="32" bodyend="160"/>
+    <listofallmembers>
+      <member refid="class_list_1ad56fcbd2da2271dce020bb933349cba4" prot="private" virt="non-virtual"><scope>List</scope><name>_size</name></member>
+      <member refid="class_list_1a503c45a9fa1c1b6cd144c6d90d4d6f62" prot="protected" virt="non-virtual"><scope>List</scope><name>clear</name></member>
+      <member refid="class_list_1a94fcf6de95789700b7209c0f39292c7c" prot="protected" virt="non-virtual"><scope>List</scope><name>copyNodes</name></member>
+      <member refid="class_list_1a04815240174e3eb63b6c9c6f647138ce" prot="public" virt="non-virtual"><scope>List</scope><name>deduplicate</name></member>
+      <member refid="class_list_1a7f9880a8bf94b206cee429d7bfa98001" prot="public" virt="non-virtual"><scope>List</scope><name>disordered</name></member>
+      <member refid="class_list_1a0b937d056c2cc96d12e594f9647d5cfc" prot="public" virt="non-virtual"><scope>List</scope><name>e</name></member>
+      <member refid="class_list_1ad96bf379b8e75539b20ad30d10f10269" prot="public" virt="non-virtual"><scope>List</scope><name>empty</name></member>
+      <member refid="class_list_1a71317037748180534e54d3ff01f875a1" prot="protected" virt="non-virtual"><scope>List</scope><name>init</name></member>
+      <member refid="class_list_1a5f056da1661722bb64bf3edc7572c9c2" prot="protected" virt="non-virtual"><scope>List</scope><name>insertionSort</name></member>
+      <member refid="class_list_1a5c5e27671b21b3815d4e25b953c69454" prot="public" virt="non-virtual"><scope>List</scope><name>List</name></member>
+      <member refid="class_list_1a47912745b8fdc670d6c71d86fe4aace5" prot="public" virt="non-virtual"><scope>List</scope><name>List</name></member>
+      <member refid="class_list_1a247e8c2db3cc2b1d5e688ca8e58ca1ee" prot="public" virt="non-virtual"><scope>List</scope><name>List</name></member>
+      <member refid="class_list_1adf64f5f688a32f56ee6ac60fbac84a8b" prot="public" virt="non-virtual"><scope>List</scope><name>List</name></member>
+      <member refid="class_list_1a227a06c8fafefeec997b372cffcb282e" prot="private" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ac9c76b12a1bcf9d6908bb202c7cbb7c8" prot="private" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a07d4d9eac772dbdd50f59a34a107fc05" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a9c99e57e47cceed01befeed89a81a531" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a147bb29ce3e2fc5b91755d19cb01926f" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1aedbaf0d1ca185cca29a93203e7313c0c" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a5f138d05db90af9091585bd0931ee1ec" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a08952d5b6d65436b3218c8ee8259e537" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1adca6bd9668e89893dfca69955db201bc" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ac18f3e0b2ffaf2af0b7562077ebcdbcb" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a658e4c73ab10ce85633ed69b61d042f6" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ae5361994abae18e5f605cd13e2f2823c" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1aa7ae016bd7facc1dab73eb54f5cf3fda" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1aabb04ef20bd3a3cc9e226bdd72824f85" prot="public" virt="non-virtual"><scope>List</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a4eaee2170920805bef1234f96aa58fbe" prot="protected" virt="non-virtual"><scope>List</scope><name>merge</name></member>
+      <member refid="class_list_1aad52d855405114c998d415c77eb78183" prot="public" virt="non-virtual"><scope>List</scope><name>merge</name></member>
+      <member refid="class_list_1a1ca15b61836a2f27255d1d8baec4c654" prot="protected" virt="non-virtual"><scope>List</scope><name>mergeSort</name></member>
+      <member refid="class_list_1afb61a226f22e12743d0396f29e244824" prot="public" virt="non-virtual"><scope>List</scope><name>n</name></member>
+      <member refid="class_list_1a1d2aa7b5544f5dee3e38f63bade6dc66" prot="public" virt="non-virtual"><scope>List</scope><name>operator[]</name></member>
+      <member refid="class_list_1afa020c0e05021aba5138f75e8cff9fd2" prot="public" virt="non-virtual"><scope>List</scope><name>remove</name></member>
+      <member refid="class_list_1a6066ea09838e1a42bec3098d18e85fda" prot="public" virt="non-virtual"><scope>List</scope><name>reverse</name></member>
+      <member refid="class_list_1ac8aa25bd64067f7411552e482d72c36f" prot="protected" virt="non-virtual"><scope>List</scope><name>selectionSort</name></member>
+      <member refid="class_list_1adaf7d93d54b029790ccf98f521ec8837" prot="public" virt="non-virtual"><scope>List</scope><name>size</name></member>
+      <member refid="class_list_1a5d88833fa5e0ee6cba3d1aef3eec0499" prot="public" virt="non-virtual"><scope>List</scope><name>sort</name></member>
+      <member refid="class_list_1adcdf869b2506e2332052eff47afc8412" prot="public" virt="non-virtual"><scope>List</scope><name>sort</name></member>
+      <member refid="class_list_1a6572713c78d660cd5f354588432be185" prot="public" virt="non-virtual"><scope>List</scope><name>traverse</name></member>
+      <member refid="class_list_1a0e4c1352f77c6015725eecffe38e4c8c" prot="public" virt="non-virtual"><scope>List</scope><name>traverse</name></member>
+      <member refid="class_list_1a0c2aafff2b9e0ba54359dcb59f627f7a" prot="public" virt="non-virtual"><scope>List</scope><name>uniquify</name></member>
+      <member refid="class_list_1a4d0d8420d56bb1ab184bfbeb190ee710" prot="public" virt="non-virtual"><scope>List</scope><name>valid</name></member>
+      <member refid="class_list_1a2b58189090f6e5ce52939c9195e59e85" prot="public" virt="non-virtual"><scope>List</scope><name>~List</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

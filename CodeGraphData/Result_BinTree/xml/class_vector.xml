@@ -1,0 +1,974 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_vector" kind="class" prot="public">
+    <compoundname>Vector</compoundname>
+    <derivedcompoundref refid="class_stack" prot="public" virt="non-virtual">Stack&lt; T &gt;</derivedcompoundref>
+    <includes refid="_vector_8h" local="no">Vector.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_vector_1a2d13e843bb113b1dd10d2902c6044219" prot="protected" static="no" mutable="no">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="19" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" compoundref="_vector_8h" startline="49" endline="52">Vector&lt; T &gt;::Vector</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_vector_1ae4ef5e9fdda4214b19696bfb984496f9" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Vector&lt; T &gt;::_capacity</definition>
+        <argsstring></argsstring>
+        <name>_capacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="20" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_vector_1a2a0290969bd4070373689ad5ec7473f2" prot="protected" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Vector&lt; T &gt;::_elem</definition>
+        <argsstring></argsstring>
+        <name>_elem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="21" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_vector_1af97bad371294a807a69114d006d49256" compoundref="_vector_8h" startline="273" endline="279">Vector&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" compoundref="_vector_8h" startline="49" endline="52">Vector&lt; T &gt;::Vector</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_vector_1ab10e8a359f270775ec46a748015c32c1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::copyFrom</definition>
+        <argsstring>(T const *A, Rank lo, Rank hi)</argsstring>
+        <name>copyFrom</name>
+        <param>
+          <type>T const *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="22" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="253" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::expand</definition>
+        <argsstring>()</argsstring>
+        <name>expand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="23" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="283" bodyend="294"/>
+        <references refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" compoundref="_vector_8h" startline="13">DEFAULT_CAPACITY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a21c14696d987344139f98dca2ec78664" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::shrink</definition>
+        <argsstring>()</argsstring>
+        <name>shrink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="24" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="298" bodyend="309"/>
+        <references refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" compoundref="_vector_8h" startline="13">DEFAULT_CAPACITY</references>
+        <references refid="_vector_8h_1a8a7740dcfe7d36400b5d8bcce1fd95d1" compoundref="_vector_8h" startline="215">MIN_OCCUPANCY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a6e5808593d4d61536ba40e1508128111" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::bubble</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>bubble</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="25" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="438" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a3c9a20adc23b97a0e394e65f271d9058" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::max</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>max</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="26" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="218" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a59adb0e4dfea9ac3ec343b439bac3db6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::partition</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>partition</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="27" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="224" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a42e6efced5c508e4c995f0ef457542ce" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::merge</definition>
+        <argsstring>(Rank lo, Rank mi, Rank hi)</argsstring>
+        <name>merge</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>mi</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="28" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="494" bodyend="512"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_vector_1a84409bdd044ccd541c644cc08bf9097b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(int c=DEFAULT_CAPACITY, int s=0, T v=0)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>int</type>
+          <declname>c</declname>
+          <defval><ref refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" kindref="member">DEFAULT_CAPACITY</ref></defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>v</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="33" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="33" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a97049c8094531cb432db8b887b818663" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(T const *A, Rank n)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>T const *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="39" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1aa9fb87b6e9fbca78ae1aacd38dd144ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(T const *A, Rank lo, Rank hi)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>T const *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="44" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(Vector&lt; T &gt; const &amp;V)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type><ref refid="class_vector" kindref="compound">Vector</ref>&lt; T &gt; const &amp;</type>
+          <declname>V</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="49" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="49" bodyend="52"/>
+        <references refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" compoundref="_vector_8h" startline="21">Vector&lt; T &gt;::_elem</references>
+        <references refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" compoundref="_vector_8h" startline="19">Vector&lt; T &gt;::_size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a569f9d9488e6bca72f68105e9a4102db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector&lt; T &gt;::Vector</definition>
+        <argsstring>(Vector&lt; T &gt; const &amp;V, Rank lo, Rank hi)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type><ref refid="class_vector" kindref="compound">Vector</ref>&lt; T &gt; const &amp;</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="54" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="54" bodyend="57"/>
+        <references refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" compoundref="_vector_8h" startline="21">Vector&lt; T &gt;::_elem</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1afd524fac19e6d3d69db5198ffe2952b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Vector&lt; T &gt;::~Vector</definition>
+        <argsstring>()</argsstring>
+        <name>~Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="61" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="68" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="68" bodyend="71"/>
+        <referencedby refid="class_vector_1af97bad371294a807a69114d006d49256" compoundref="_vector_8h" startline="273" endline="279">Vector&lt; T &gt;::operator=</referencedby>
+        <referencedby refid="class_stack_1aa2ea0e8c3293648589dd734d52487408" compoundref="_stack_8h" startline="15" endline="18">Stack&lt; T &gt;::pop</referencedby>
+        <referencedby refid="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" compoundref="_stack_8h" startline="10" endline="13">Stack&lt; T &gt;::push</referencedby>
+        <referencedby refid="class_stack_1a5408496074d240c8b9bbc37d277e590f" compoundref="_stack_8h" startline="20" endline="23">Stack&lt; T &gt;::top</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a9650adf10e940913fa06f149c4017c25" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Vector&lt; T &gt;::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="73" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="73" bodyend="76"/>
+        <referencedby refid="_bin_tree_8h_1aab38e650539289f2a519689e8810441b" compoundref="_bin_tree_8h" startline="279" endline="290">travIn_I1</referencedby>
+        <referencedby refid="_bin_tree_8h_1a90a78392ecbd476c4acb3e387ec86edc" compoundref="_bin_tree_8h" startline="294" endline="310">travIn_I2</referencedby>
+        <referencedby refid="_bin_tree_8h_1a8d3318a380bce8d3f9b2017dd5757c84" compoundref="_bin_tree_8h" startline="204" endline="218">travPre_I1</referencedby>
+        <referencedby refid="_bin_tree_8h_1af3f63ad9e581cf16a6db6f534d3e5b68" compoundref="_bin_tree_8h" startline="233" endline="243">travPre_I2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a141a1ab83fe45afab035e8c906e470bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Vector&lt; T &gt;::disordered</definition>
+        <argsstring>() const </argsstring>
+        <name>disordered</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="78" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="313" bodyend="320"/>
+        <references refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" compoundref="_list_8h" startline="417">n</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::find</definition>
+        <argsstring>(T const &amp;e) const </argsstring>
+        <name>find</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="80" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a448353ec3f7e9d662cf7c7a8a25dca04" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::find</definition>
+        <argsstring>(T const &amp;e, Rank lo, Rank hi) const </argsstring>
+        <name>find</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="85" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="337" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a261234c3b32fa7ada08c0e8e99569633" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::search</definition>
+        <argsstring>(T const &amp;e) const </argsstring>
+        <name>search</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="87" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::search</definition>
+        <argsstring>(T const &amp;e, Rank lo, Rank hi) const </argsstring>
+        <name>search</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="92" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="516" bodyend="520"/>
+        <references refid="_vector_8h_1a5b36aba301d285a732513ec6e4cb35d3" compoundref="_vector_8h" startline="525" endline="533">binSearch</references>
+        <references refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" compoundref="_vector_8h" startline="538" endline="549">fibSearch</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a3777ec2fa8190ae1e020c2af282b7a64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; Vector&lt; T &gt;::operator[]</definition>
+        <argsstring>(Rank r) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="96" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="263" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1af97bad371294a807a69114d006d49256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>Vector&lt; T &gt; &amp; Vector&lt; T &gt;::operator=</definition>
+        <argsstring>(Vector&lt; T &gt; const &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type><ref refid="class_vector" kindref="compound">Vector</ref>&lt; T &gt; const &amp;</type>
+          <defname>V</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="98" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="273" bodyend="279"/>
+        <references refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" compoundref="_vector_8h" startline="21">Vector&lt; T &gt;::_elem</references>
+        <references refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" compoundref="_vector_8h" startline="68" endline="71">Vector&lt; T &gt;::size</references>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a592d614579672696df8adb1e0a78c977" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T Vector&lt; T &gt;::remove</definition>
+        <argsstring>(Rank r)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>r</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="100" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="369" bodyend="374"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a530be4a7f003d040fd3789384e699767" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Vector&lt; T &gt;::remove</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="102" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="357" bodyend="365"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::insert</definition>
+        <argsstring>(Rank r, T const &amp;e)</argsstring>
+        <name>insert</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="104" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="345" bodyend="353"/>
+        <referencedby refid="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" compoundref="_stack_8h" startline="10" endline="13">Stack&lt; T &gt;::push</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a3b46c9e4d47b92c34a8c906f8581320d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Vector&lt; T &gt;::insert</definition>
+        <argsstring>(T const &amp;e)</argsstring>
+        <name>insert</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="106" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a770586f25289d2c07e57803d8fada81e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Vector&lt; T &gt;::deduplicate</definition>
+        <argsstring>()</argsstring>
+        <name>deduplicate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="111" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="378" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a1a7c9c96304c270c296f53ce85ac817f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Vector&lt; T &gt;::uniquify</definition>
+        <argsstring>()</argsstring>
+        <name>uniquify</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="113" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="390" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a34574f8372091eb762da92fdb0120fa7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::sort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>sort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="115" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="403" bodyend="413"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::sort</definition>
+        <argsstring>()</argsstring>
+        <name>sort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="117" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a239eec8daf7c505a947955088bd9d6a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::unsort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>unsort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="122" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="324" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::unsort</definition>
+        <argsstring>()</argsstring>
+        <name>unsort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="124" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="124" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a7b6bc31bde56aaf172b97061fd099a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::insertionSort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>insertionSort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="129" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="469" bodyend="479"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1abb694ed02296df014f2160cf26e38bf3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::insertionSort</definition>
+        <argsstring>()</argsstring>
+        <name>insertionSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="131" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a9f4eca8f2e01081553a9b19d7faf3986" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::selectionSort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>selectionSort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="137" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="454" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1acfe355f2045dad2f6d06b96527741b0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::selectionSort</definition>
+        <argsstring>()</argsstring>
+        <name>selectionSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="139" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="139" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1ac32887865455ba3b042893b86b115ad4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::mergeSort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>mergeSort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="144" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="483" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::mergeSort</definition>
+        <argsstring>()</argsstring>
+        <name>mergeSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="146" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a8d6d5c4cff89adf2b4070a2bebea7fe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::bubbleSort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>bubbleSort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="151" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="417" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::bubbleSort</definition>
+        <argsstring>()</argsstring>
+        <name>bubbleSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="153" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="153" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a5a75afa6fc2c15cc23d8417c41618769" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::quickSort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>quickSort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="158" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="424" bodyend="434"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::quickSort</definition>
+        <argsstring>()</argsstring>
+        <name>quickSort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="160" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a74220991a29e52693faac05328b82599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::heapSort</definition>
+        <argsstring>(Rank lo, Rank hi)</argsstring>
+        <name>heapSort</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1ab72df765b363e0a12dd8243a72011c91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::traverse</definition>
+        <argsstring>(void(*)(T &amp;))</argsstring>
+        <name>traverse</name>
+        <param>
+          <type>void(*)(T &amp;)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="169" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="573" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="function" id="class_vector_1a6b39eb35d16b338d1169a298e85dd642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Vector&lt; T &gt;::traverse</definition>
+        <argsstring>(VST &amp;)</argsstring>
+        <name>traverse</name>
+        <param>
+          <type>VST &amp;</type>
+          <defname>visit</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="171" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="581" bodyend="584"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="25">
+        <label>Vector&lt; T &gt;</label>
+        <link refid="class_vector"/>
+      </node>
+      <node id="26">
+        <label>Stack&lt; T &gt;</label>
+        <link refid="class_stack"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="17" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="16" bodyend="172"/>
+    <listofallmembers>
+      <member refid="class_vector_1ae4ef5e9fdda4214b19696bfb984496f9" prot="protected" virt="non-virtual"><scope>Vector</scope><name>_capacity</name></member>
+      <member refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" prot="protected" virt="non-virtual"><scope>Vector</scope><name>_elem</name></member>
+      <member refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" prot="protected" virt="non-virtual"><scope>Vector</scope><name>_size</name></member>
+      <member refid="class_vector_1a6e5808593d4d61536ba40e1508128111" prot="protected" virt="non-virtual"><scope>Vector</scope><name>bubble</name></member>
+      <member refid="class_vector_1a8d6d5c4cff89adf2b4070a2bebea7fe2" prot="public" virt="non-virtual"><scope>Vector</scope><name>bubbleSort</name></member>
+      <member refid="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" prot="public" virt="non-virtual"><scope>Vector</scope><name>bubbleSort</name></member>
+      <member refid="class_vector_1ab10e8a359f270775ec46a748015c32c1" prot="protected" virt="non-virtual"><scope>Vector</scope><name>copyFrom</name></member>
+      <member refid="class_vector_1a770586f25289d2c07e57803d8fada81e" prot="public" virt="non-virtual"><scope>Vector</scope><name>deduplicate</name></member>
+      <member refid="class_vector_1a141a1ab83fe45afab035e8c906e470bb" prot="public" virt="non-virtual"><scope>Vector</scope><name>disordered</name></member>
+      <member refid="class_vector_1a9650adf10e940913fa06f149c4017c25" prot="public" virt="non-virtual"><scope>Vector</scope><name>empty</name></member>
+      <member refid="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" prot="protected" virt="non-virtual"><scope>Vector</scope><name>expand</name></member>
+      <member refid="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" prot="public" virt="non-virtual"><scope>Vector</scope><name>find</name></member>
+      <member refid="class_vector_1a448353ec3f7e9d662cf7c7a8a25dca04" prot="public" virt="non-virtual"><scope>Vector</scope><name>find</name></member>
+      <member refid="class_vector_1a74220991a29e52693faac05328b82599" prot="public" virt="non-virtual"><scope>Vector</scope><name>heapSort</name></member>
+      <member refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" prot="public" virt="non-virtual"><scope>Vector</scope><name>insert</name></member>
+      <member refid="class_vector_1a3b46c9e4d47b92c34a8c906f8581320d" prot="public" virt="non-virtual"><scope>Vector</scope><name>insert</name></member>
+      <member refid="class_vector_1a7b6bc31bde56aaf172b97061fd099a1f" prot="public" virt="non-virtual"><scope>Vector</scope><name>insertionSort</name></member>
+      <member refid="class_vector_1abb694ed02296df014f2160cf26e38bf3" prot="public" virt="non-virtual"><scope>Vector</scope><name>insertionSort</name></member>
+      <member refid="class_vector_1a3c9a20adc23b97a0e394e65f271d9058" prot="protected" virt="non-virtual"><scope>Vector</scope><name>max</name></member>
+      <member refid="class_vector_1a42e6efced5c508e4c995f0ef457542ce" prot="protected" virt="non-virtual"><scope>Vector</scope><name>merge</name></member>
+      <member refid="class_vector_1ac32887865455ba3b042893b86b115ad4" prot="public" virt="non-virtual"><scope>Vector</scope><name>mergeSort</name></member>
+      <member refid="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" prot="public" virt="non-virtual"><scope>Vector</scope><name>mergeSort</name></member>
+      <member refid="class_vector_1af97bad371294a807a69114d006d49256" prot="public" virt="non-virtual"><scope>Vector</scope><name>operator=</name></member>
+      <member refid="class_vector_1a3777ec2fa8190ae1e020c2af282b7a64" prot="public" virt="non-virtual"><scope>Vector</scope><name>operator[]</name></member>
+      <member refid="class_vector_1a59adb0e4dfea9ac3ec343b439bac3db6" prot="protected" virt="non-virtual"><scope>Vector</scope><name>partition</name></member>
+      <member refid="class_vector_1a5a75afa6fc2c15cc23d8417c41618769" prot="public" virt="non-virtual"><scope>Vector</scope><name>quickSort</name></member>
+      <member refid="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" prot="public" virt="non-virtual"><scope>Vector</scope><name>quickSort</name></member>
+      <member refid="class_vector_1a592d614579672696df8adb1e0a78c977" prot="public" virt="non-virtual"><scope>Vector</scope><name>remove</name></member>
+      <member refid="class_vector_1a530be4a7f003d040fd3789384e699767" prot="public" virt="non-virtual"><scope>Vector</scope><name>remove</name></member>
+      <member refid="class_vector_1a261234c3b32fa7ada08c0e8e99569633" prot="public" virt="non-virtual"><scope>Vector</scope><name>search</name></member>
+      <member refid="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" prot="public" virt="non-virtual"><scope>Vector</scope><name>search</name></member>
+      <member refid="class_vector_1a9f4eca8f2e01081553a9b19d7faf3986" prot="public" virt="non-virtual"><scope>Vector</scope><name>selectionSort</name></member>
+      <member refid="class_vector_1acfe355f2045dad2f6d06b96527741b0c" prot="public" virt="non-virtual"><scope>Vector</scope><name>selectionSort</name></member>
+      <member refid="class_vector_1a21c14696d987344139f98dca2ec78664" prot="protected" virt="non-virtual"><scope>Vector</scope><name>shrink</name></member>
+      <member refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" prot="public" virt="non-virtual"><scope>Vector</scope><name>size</name></member>
+      <member refid="class_vector_1a34574f8372091eb762da92fdb0120fa7" prot="public" virt="non-virtual"><scope>Vector</scope><name>sort</name></member>
+      <member refid="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" prot="public" virt="non-virtual"><scope>Vector</scope><name>sort</name></member>
+      <member refid="class_vector_1ab72df765b363e0a12dd8243a72011c91" prot="public" virt="non-virtual"><scope>Vector</scope><name>traverse</name></member>
+      <member refid="class_vector_1a6b39eb35d16b338d1169a298e85dd642" prot="public" virt="non-virtual"><scope>Vector</scope><name>traverse</name></member>
+      <member refid="class_vector_1a1a7c9c96304c270c296f53ce85ac817f" prot="public" virt="non-virtual"><scope>Vector</scope><name>uniquify</name></member>
+      <member refid="class_vector_1a239eec8daf7c505a947955088bd9d6a6" prot="public" virt="non-virtual"><scope>Vector</scope><name>unsort</name></member>
+      <member refid="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" prot="public" virt="non-virtual"><scope>Vector</scope><name>unsort</name></member>
+      <member refid="class_vector_1a84409bdd044ccd541c644cc08bf9097b" prot="public" virt="non-virtual"><scope>Vector</scope><name>Vector</name></member>
+      <member refid="class_vector_1a97049c8094531cb432db8b887b818663" prot="public" virt="non-virtual"><scope>Vector</scope><name>Vector</name></member>
+      <member refid="class_vector_1aa9fb87b6e9fbca78ae1aacd38dd144ae" prot="public" virt="non-virtual"><scope>Vector</scope><name>Vector</name></member>
+      <member refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" prot="public" virt="non-virtual"><scope>Vector</scope><name>Vector</name></member>
+      <member refid="class_vector_1a569f9d9488e6bca72f68105e9a4102db" prot="public" virt="non-virtual"><scope>Vector</scope><name>Vector</name></member>
+      <member refid="class_vector_1afd524fac19e6d3d69db5198ffe2952b0" prot="public" virt="non-virtual"><scope>Vector</scope><name>~Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

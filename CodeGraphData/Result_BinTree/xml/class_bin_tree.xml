@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bin_tree" kind="class" prot="public">
+    <compoundname>BinTree</compoundname>
+    <includes refid="_bin_tree_8h" local="no">BinTree.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_bin_tree_1a0a9473933a63254fbdd11b5eef31e782" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BinTree&lt; T &gt;::_size</definition>
+        <argsstring></argsstring>
+        <name>_size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="383" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="383" bodyend="-1"/>
+        <referencedby refid="class_bin_tree_1a28a7374358ca84d2659873f75ee29724" compoundref="_bin_tree_8h" startline="537" endline="547">BinTree&lt; T &gt;::secede</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_bin_tree_1ae3a45e720aa8a517aae4cf553d8e44d4" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref> const &amp;</type>
+        <definition>T const &amp; BinTree&lt; T &gt;::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="413" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" prot="public" static="no" mutable="no">
+        <type><ref refid="class_bin_tree" kindref="compound">BinTree</ref>&lt; T &gt; *&amp;</type>
+        <definition>BinTree&lt; T &gt; *&amp; BinTree&lt; T &gt;::T</definition>
+        <argsstring></argsstring>
+        <name>T</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="417" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="417" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) _root</argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="384" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1accadaa12c1dd3a8afa852d505e0000c9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int BinTree&lt; T &gt;::updateHeight</definition>
+        <argsstring>(BinNodePosi(T) x)</argsstring>
+        <name>updateHeight</name>
+        <param>
+          <type><ref refid="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" kindref="member">BinNodePosi</ref>(<ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref>)</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="385" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="468" bodyend="471"/>
+        <references refid="_bin_tree_8h_1ac5a062fc23478e745c63b451e8946326" compoundref="_bin_tree_8h" startline="12">stature</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a307a1ee6aa9bd4a40486a4e3a23231cc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BinTree&lt; T &gt;::updateHeightAbove</definition>
+        <argsstring>(BinNodePosi(T) x)</argsstring>
+        <name>updateHeightAbove</name>
+        <param>
+          <type><ref refid="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" kindref="member">BinNodePosi</ref>(<ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref>)</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="386" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="474" bodyend="481"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bin_tree_1a47eef22d29cd023449d97c073c08e5b6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinTree</definition>
+        <argsstring>()</argsstring>
+        <name>BinTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="388" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="388" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a9d793ba34b02c7da9faeb423ddd61d56" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual BinTree&lt; T &gt;::~BinTree</definition>
+        <argsstring>()</argsstring>
+        <name>~BinTree</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="390" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="390" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a4d9e120f819788fa4e90005412c9900b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int BinTree&lt; T &gt;::size</definition>
+        <argsstring>() const </argsstring>
+        <name>size</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="396" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="396" bodyend="399"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a9ca8d7ae95b9bed51eb43f30c8d2bd58" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BinTree&lt; T &gt;::empty</definition>
+        <argsstring>() const </argsstring>
+        <name>empty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="401" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="401" bodyend="404"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a5d28af397d5bbd77538a5748836fc1ba" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) root() const </argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="406" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="406" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1ae023cbe549ff4c3956696e1bba8d5559" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) insertAsRoot(T const &amp;e)</argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a4dbe6df0d24f3b3d1d6f0bbe5e22d410" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) insertAsLC(BinNodePosi(T) x</argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a113acda3d8cde931abb5c539120587b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) insertAsRC(BinNodePosi(T) x</argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a8fbe64978fb0e4cb80d63954dde4fc62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) attachAsLC(BinNodePosi(T) x</argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="417" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a0e027a5c8f72464d722ff8d7ad1af368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BinTree&lt; T &gt;::BinNodePosi</definition>
+        <argsstring>(T) attachAsRC(BinNodePosi(T) x</argsstring>
+        <name>BinNodePosi</name>
+        <param>
+          <type><ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="419" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a19427aa313d2b9338a3cfb86263687a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BinTree&lt; T &gt;::remove</definition>
+        <argsstring>(BinNodePosi(T) x)</argsstring>
+        <name>remove</name>
+        <param>
+          <type><ref refid="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" kindref="member">BinNodePosi</ref>(<ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref>)</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="421" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="550" bodyend="557"/>
+        <references refid="_bin_tree_8h_1acc76b21ee007554b1e81b2887e29017a" compoundref="_bin_tree_8h" startline="34">FromParentTo</references>
+        <references refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" compoundref="_list_8h" startline="417">n</references>
+        <references refid="_bin_tree_8h_1acbb3efde28d6afa98588fbefc74755d1" compoundref="_bin_tree_8h" startline="560" endline="568">removeAt</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a28a7374358ca84d2659873f75ee29724" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_bin_tree" kindref="compound">BinTree</ref>&lt; <ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref> &gt; *</type>
+        <definition>BinTree&lt; T &gt; * BinTree&lt; T &gt;::secede</definition>
+        <argsstring>(BinNodePosi(T) x)</argsstring>
+        <name>secede</name>
+        <param>
+          <type><ref refid="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" kindref="member">BinNodePosi</ref>(<ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref>)</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="423" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="537" bodyend="547"/>
+        <references refid="class_bin_tree_1a0a9473933a63254fbdd11b5eef31e782" compoundref="_bin_tree_8h" startline="383">BinTree&lt; T &gt;::_size</references>
+        <references refid="_bin_tree_8h_1acc76b21ee007554b1e81b2887e29017a" compoundref="_bin_tree_8h" startline="34">FromParentTo</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1aab3f5192b60ce9bf9d4a738fe0e090a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BinTree&lt; T &gt;::travLevel</definition>
+        <argsstring>(VST &amp;visit)</argsstring>
+        <name>travLevel</name>
+        <param>
+          <type>VST &amp;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="426" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="426" bodyend="430"/>
+        <references refid="class_bin_tree_1aab3f5192b60ce9bf9d4a738fe0e090a6" compoundref="_bin_tree_8h" startline="426" endline="430">BinTree&lt; T &gt;::travLevel</references>
+        <referencedby refid="class_bin_tree_1aab3f5192b60ce9bf9d4a738fe0e090a6" compoundref="_bin_tree_8h" startline="426" endline="430">BinTree&lt; T &gt;::travLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a9adcae536f47eb811877f6f4345b0cfd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BinTree&lt; T &gt;::travPre</definition>
+        <argsstring>(VST &amp;visit)</argsstring>
+        <name>travPre</name>
+        <param>
+          <type>VST &amp;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="433" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="433" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1ae93f244299644f9dc7ffe61c22ee52d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BinTree&lt; T &gt;::travIn</definition>
+        <argsstring>(VST &amp;visit)</argsstring>
+        <name>travIn</name>
+        <param>
+          <type>VST &amp;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="440" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="440" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1ade878958b23b6b7b13e3b7766aac2395" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VST</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void BinTree&lt; T &gt;::travPost</definition>
+        <argsstring>(VST &amp;visit)</argsstring>
+        <name>travPost</name>
+        <param>
+          <type>VST &amp;</type>
+          <declname>visit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="447" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="447" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1ade80d982ecfef5112f773b26aed3dd9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BinTree&lt; T &gt;::operator&lt;</definition>
+        <argsstring>(BinTree&lt; T &gt; const &amp;t)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="class_bin_tree" kindref="compound">BinTree</ref>&lt; <ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref> &gt; const &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="453" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bin_tree_1a2b8788470fc0bfa3a85d9f81ebda8f5c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BinTree&lt; T &gt;::operator==</definition>
+        <argsstring>(BinTree&lt; T &gt; const &amp;t)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="class_bin_tree" kindref="compound">BinTree</ref>&lt; <ref refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kindref="member">T</ref> &gt; const &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="457" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="457" bodyend="460"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="381" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="380" bodyend="461"/>
+    <listofallmembers>
+      <member refid="class_bin_tree_1a0a9473933a63254fbdd11b5eef31e782" prot="protected" virt="non-virtual"><scope>BinTree</scope><name>_size</name></member>
+      <member refid="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" prot="protected" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1a5d28af397d5bbd77538a5748836fc1ba" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1ae023cbe549ff4c3956696e1bba8d5559" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1a4dbe6df0d24f3b3d1d6f0bbe5e22d410" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1a113acda3d8cde931abb5c539120587b1" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1a8fbe64978fb0e4cb80d63954dde4fc62" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1a0e027a5c8f72464d722ff8d7ad1af368" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinNodePosi</name></member>
+      <member refid="class_bin_tree_1a47eef22d29cd023449d97c073c08e5b6" prot="public" virt="non-virtual"><scope>BinTree</scope><name>BinTree</name></member>
+      <member refid="class_bin_tree_1ae3a45e720aa8a517aae4cf553d8e44d4" prot="public" virt="non-virtual"><scope>BinTree</scope><name>e</name></member>
+      <member refid="class_bin_tree_1a9ca8d7ae95b9bed51eb43f30c8d2bd58" prot="public" virt="non-virtual"><scope>BinTree</scope><name>empty</name></member>
+      <member refid="class_bin_tree_1ade80d982ecfef5112f773b26aed3dd9c" prot="public" virt="non-virtual"><scope>BinTree</scope><name>operator&lt;</name></member>
+      <member refid="class_bin_tree_1a2b8788470fc0bfa3a85d9f81ebda8f5c" prot="public" virt="non-virtual"><scope>BinTree</scope><name>operator==</name></member>
+      <member refid="class_bin_tree_1a19427aa313d2b9338a3cfb86263687a7" prot="public" virt="non-virtual"><scope>BinTree</scope><name>remove</name></member>
+      <member refid="class_bin_tree_1a28a7374358ca84d2659873f75ee29724" prot="public" virt="non-virtual"><scope>BinTree</scope><name>secede</name></member>
+      <member refid="class_bin_tree_1a4d9e120f819788fa4e90005412c9900b" prot="public" virt="non-virtual"><scope>BinTree</scope><name>size</name></member>
+      <member refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" prot="public" virt="non-virtual"><scope>BinTree</scope><name>T</name></member>
+      <member refid="class_bin_tree_1ae93f244299644f9dc7ffe61c22ee52d0" prot="public" virt="non-virtual"><scope>BinTree</scope><name>travIn</name></member>
+      <member refid="class_bin_tree_1aab3f5192b60ce9bf9d4a738fe0e090a6" prot="public" virt="non-virtual"><scope>BinTree</scope><name>travLevel</name></member>
+      <member refid="class_bin_tree_1ade878958b23b6b7b13e3b7766aac2395" prot="public" virt="non-virtual"><scope>BinTree</scope><name>travPost</name></member>
+      <member refid="class_bin_tree_1a9adcae536f47eb811877f6f4345b0cfd" prot="public" virt="non-virtual"><scope>BinTree</scope><name>travPre</name></member>
+      <member refid="class_bin_tree_1accadaa12c1dd3a8afa852d505e0000c9" prot="protected" virt="virtual"><scope>BinTree</scope><name>updateHeight</name></member>
+      <member refid="class_bin_tree_1a307a1ee6aa9bd4a40486a4e3a23231cc" prot="protected" virt="non-virtual"><scope>BinTree</scope><name>updateHeightAbove</name></member>
+      <member refid="class_bin_tree_1a9d793ba34b02c7da9faeb423ddd61d56" prot="public" virt="virtual"><scope>BinTree</scope><name>~BinTree</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

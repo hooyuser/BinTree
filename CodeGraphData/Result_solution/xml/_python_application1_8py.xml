@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_python_application1_8py" kind="file">
+    <compoundname>PythonApplication1.py</compoundname>
+    <innernamespace refid="namespace_python_application1">PythonApplication1</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="namespace_python_application1" refkind="compound"><highlight class="comment">#<sp/>-*-<sp/>coding:<sp/>utf-8<sp/>-*-</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">print(</highlight><highlight class="stringliteral">&apos;&apos;&apos;df</highlight></codeline>
+<codeline lineno="3"><highlight class="stringliteral">...sad</highlight></codeline>
+<codeline lineno="4"><highlight class="stringliteral">asdf&apos;&apos;&apos;</highlight><highlight class="normal">)</highlight></codeline>
+    </programlisting>
+    <location file="D:/CHY/Program/Python/PythonApplication1/PythonApplication1/PythonApplication1.py"/>
+  </compounddef>
+</doxygen>

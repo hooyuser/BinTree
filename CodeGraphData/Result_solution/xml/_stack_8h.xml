@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_stack_8h" kind="file">
+    <compoundname>Stack.h</compoundname>
+    <includes refid="_vector_8h" local="yes">vector.h</includes>
+    <includedby refid="_bin_tree_8h" local="yes">D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h</includedby>
+    <incdepgraph>
+      <node id="34">
+        <label>vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>time.h</label>
+      </node>
+      <node id="33">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h</label>
+        <link refid="Stack.h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="38">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h</label>
+        <link refid="_bin_tree_8h"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="37">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h</label>
+        <link refid="Stack.h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_stack" prot="public">Stack</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>STACK_H_</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>STACK_H_</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="7" refid="class_stack" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_stack" kindref="compound">Stack</ref><sp/>:</highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_vector" kindref="compound">Vector</ref>&lt;T&gt;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="10" refid="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" kindref="member">push</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" kindref="member">insert</ref>(this-&gt;<ref refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" kindref="member">size</ref>(),<sp/>e);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_stack_1aa2ea0e8c3293648589dd734d52487408" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/><ref refid="class_stack_1aa2ea0e8c3293648589dd734d52487408" kindref="member">pop</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(this-&gt;<ref refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" kindref="member">size</ref>()<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_stack_1a5408496074d240c8b9bbc37d277e590f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/><ref refid="class_stack_1a5408496074d240c8b9bbc37d277e590f" kindref="member">top</ref>()</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*</highlight><highlight class="keyword">this</highlight><highlight class="normal">)[this-&gt;<ref refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" kindref="member">size</ref>()<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>STACK_H_</highlight></codeline>
+    </programlisting>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h"/>
+  </compounddef>
+</doxygen>

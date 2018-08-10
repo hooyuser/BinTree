@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_aaa9ba8c3e6c64238e0052534262a952" kind="dir">
+    <compoundname>D:/CHY/Program/C++/DSA/5/BinTree</compoundname>
+    <innerdir refid="dir_6965501a76a04631be8e8a69b62164d3">D:/CHY/Program/C++/DSA/5/BinTree/BinTree</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_fib" kind="class" prot="public">
+    <compoundname>Fib</compoundname>
+    <includes refid="_vector_8h" local="no">Vector.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_fib_1a157f5e60dfd2f6b77104bb5048aee8a0" prot="private" static="no" mutable="no">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Fib::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="178" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_fib_1a12f13a6523a50fe75aac4ef6f1c7fffc" prot="private" static="no" mutable="no">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Fib::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="178" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_fib_1a690f223b8daff48b899937fefa337b9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Fib::Fib</definition>
+        <argsstring>(Rank n)</argsstring>
+        <name>Fib</name>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="181" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="181" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fib_1a81f9f5e1184553610c48659e37dda1b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Fib::get</definition>
+        <argsstring>()</argsstring>
+        <name>get</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="188" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="188" bodyend="191"/>
+        <referencedby refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" compoundref="_vector_8h" startline="538" endline="549">fibSearch</referencedby>
+        <referencedby refid="_vector_8h_1a7a31169d91859420f3e77f1a1c8b529f" compoundref="_vector_8h" startline="553" endline="569">simpleFibSearch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_fib_1a14ec7c27bde6908508e637e8aac94b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Fib::next</definition>
+        <argsstring>()</argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="193" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="193" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>Rank Fib::prev</definition>
+        <argsstring>()</argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="200" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="200" bodyend="205"/>
+        <referencedby refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" compoundref="_vector_8h" startline="538" endline="549">fibSearch</referencedby>
+        <referencedby refid="_vector_8h_1a7a31169d91859420f3e77f1a1c8b529f" compoundref="_vector_8h" startline="553" endline="569">simpleFibSearch</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="176" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="175" bodyend="206"/>
+    <listofallmembers>
+      <member refid="class_fib_1a157f5e60dfd2f6b77104bb5048aee8a0" prot="private" virt="non-virtual"><scope>Fib</scope><name>f</name></member>
+      <member refid="class_fib_1a690f223b8daff48b899937fefa337b9d" prot="public" virt="non-virtual"><scope>Fib</scope><name>Fib</name></member>
+      <member refid="class_fib_1a12f13a6523a50fe75aac4ef6f1c7fffc" prot="private" virt="non-virtual"><scope>Fib</scope><name>g</name></member>
+      <member refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" prot="public" virt="non-virtual"><scope>Fib</scope><name>get</name></member>
+      <member refid="class_fib_1a14ec7c27bde6908508e637e8aac94b4e" prot="public" virt="non-virtual"><scope>Fib</scope><name>next</name></member>
+      <member refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" prot="public" virt="non-virtual"><scope>Fib</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_stack" kind="class" prot="public">
+    <compoundname>Stack</compoundname>
+    <basecompoundref refid="class_vector" prot="public" virt="non-virtual">Vector&lt; T &gt;</basecompoundref>
+    <includes refid="_stack_8h" local="no">Stack.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Stack&lt; T &gt;::push</definition>
+        <argsstring>(T const &amp;e)</argsstring>
+        <name>push</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" line="10" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" bodystart="10" bodyend="13"/>
+        <references refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" compoundref="_vector_8h" startline="345" endline="353">Vector&lt; T &gt;::insert</references>
+        <references refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" compoundref="_vector_8h" startline="68" endline="71">Vector&lt; T &gt;::size</references>
+        <referencedby refid="_bin_tree_8h_1a90a78392ecbd476c4acb3e387ec86edc" compoundref="_bin_tree_8h" startline="294" endline="310">travIn_I2</referencedby>
+        <referencedby refid="_bin_tree_8h_1a8d3318a380bce8d3f9b2017dd5757c84" compoundref="_bin_tree_8h" startline="204" endline="218">travPre_I1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1aa2ea0e8c3293648589dd734d52487408" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Stack&lt; T &gt;::pop</definition>
+        <argsstring>()</argsstring>
+        <name>pop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" line="15" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" bodystart="15" bodyend="18"/>
+        <references refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" compoundref="_vector_8h" startline="68" endline="71">Vector&lt; T &gt;::size</references>
+        <referencedby refid="_bin_tree_8h_1aab38e650539289f2a519689e8810441b" compoundref="_bin_tree_8h" startline="279" endline="290">travIn_I1</referencedby>
+        <referencedby refid="_bin_tree_8h_1a90a78392ecbd476c4acb3e387ec86edc" compoundref="_bin_tree_8h" startline="294" endline="310">travIn_I2</referencedby>
+        <referencedby refid="_bin_tree_8h_1a8d3318a380bce8d3f9b2017dd5757c84" compoundref="_bin_tree_8h" startline="204" endline="218">travPre_I1</referencedby>
+        <referencedby refid="_bin_tree_8h_1af3f63ad9e581cf16a6db6f534d3e5b68" compoundref="_bin_tree_8h" startline="233" endline="243">travPre_I2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_stack_1a5408496074d240c8b9bbc37d277e590f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Stack&lt; T &gt;::top</definition>
+        <argsstring>()</argsstring>
+        <name>top</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" line="20" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" bodystart="20" bodyend="23"/>
+        <references refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" compoundref="_vector_8h" startline="68" endline="71">Vector&lt; T &gt;::size</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>Vector&lt; T &gt;</label>
+        <link refid="class_vector"/>
+      </node>
+      <node id="21">
+        <label>Stack&lt; T &gt;</label>
+        <link refid="class_stack"/>
+        <childnode refid="22" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>Vector&lt; T &gt;</label>
+        <link refid="class_vector"/>
+      </node>
+      <node id="23">
+        <label>Stack&lt; T &gt;</label>
+        <link refid="class_stack"/>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" line="8" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h" bodystart="7" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_vector_1ae4ef5e9fdda4214b19696bfb984496f9" prot="protected" virt="non-virtual"><scope>Stack</scope><name>_capacity</name></member>
+      <member refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" prot="protected" virt="non-virtual"><scope>Stack</scope><name>_elem</name></member>
+      <member refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" prot="protected" virt="non-virtual"><scope>Stack</scope><name>_size</name></member>
+      <member refid="class_vector_1a6e5808593d4d61536ba40e1508128111" prot="protected" virt="non-virtual"><scope>Stack</scope><name>bubble</name></member>
+      <member refid="class_vector_1a8d6d5c4cff89adf2b4070a2bebea7fe2" prot="public" virt="non-virtual"><scope>Stack</scope><name>bubbleSort</name></member>
+      <member refid="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" prot="public" virt="non-virtual"><scope>Stack</scope><name>bubbleSort</name></member>
+      <member refid="class_vector_1ab10e8a359f270775ec46a748015c32c1" prot="protected" virt="non-virtual"><scope>Stack</scope><name>copyFrom</name></member>
+      <member refid="class_vector_1a770586f25289d2c07e57803d8fada81e" prot="public" virt="non-virtual"><scope>Stack</scope><name>deduplicate</name></member>
+      <member refid="class_vector_1a141a1ab83fe45afab035e8c906e470bb" prot="public" virt="non-virtual"><scope>Stack</scope><name>disordered</name></member>
+      <member refid="class_vector_1a9650adf10e940913fa06f149c4017c25" prot="public" virt="non-virtual"><scope>Stack</scope><name>empty</name></member>
+      <member refid="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" prot="protected" virt="non-virtual"><scope>Stack</scope><name>expand</name></member>
+      <member refid="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" prot="public" virt="non-virtual"><scope>Stack</scope><name>find</name></member>
+      <member refid="class_vector_1a448353ec3f7e9d662cf7c7a8a25dca04" prot="public" virt="non-virtual"><scope>Stack</scope><name>find</name></member>
+      <member refid="class_vector_1a74220991a29e52693faac05328b82599" prot="public" virt="non-virtual"><scope>Stack</scope><name>heapSort</name></member>
+      <member refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" prot="public" virt="non-virtual"><scope>Stack</scope><name>insert</name></member>
+      <member refid="class_vector_1a3b46c9e4d47b92c34a8c906f8581320d" prot="public" virt="non-virtual"><scope>Stack</scope><name>insert</name></member>
+      <member refid="class_vector_1a7b6bc31bde56aaf172b97061fd099a1f" prot="public" virt="non-virtual"><scope>Stack</scope><name>insertionSort</name></member>
+      <member refid="class_vector_1abb694ed02296df014f2160cf26e38bf3" prot="public" virt="non-virtual"><scope>Stack</scope><name>insertionSort</name></member>
+      <member refid="class_vector_1a3c9a20adc23b97a0e394e65f271d9058" prot="protected" virt="non-virtual"><scope>Stack</scope><name>max</name></member>
+      <member refid="class_vector_1a42e6efced5c508e4c995f0ef457542ce" prot="protected" virt="non-virtual"><scope>Stack</scope><name>merge</name></member>
+      <member refid="class_vector_1ac32887865455ba3b042893b86b115ad4" prot="public" virt="non-virtual"><scope>Stack</scope><name>mergeSort</name></member>
+      <member refid="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" prot="public" virt="non-virtual"><scope>Stack</scope><name>mergeSort</name></member>
+      <member refid="class_vector_1af97bad371294a807a69114d006d49256" prot="public" virt="non-virtual"><scope>Stack</scope><name>operator=</name></member>
+      <member refid="class_vector_1a3777ec2fa8190ae1e020c2af282b7a64" prot="public" virt="non-virtual"><scope>Stack</scope><name>operator[]</name></member>
+      <member refid="class_vector_1a59adb0e4dfea9ac3ec343b439bac3db6" prot="protected" virt="non-virtual"><scope>Stack</scope><name>partition</name></member>
+      <member refid="class_stack_1aa2ea0e8c3293648589dd734d52487408" prot="public" virt="non-virtual"><scope>Stack</scope><name>pop</name></member>
+      <member refid="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" prot="public" virt="non-virtual"><scope>Stack</scope><name>push</name></member>
+      <member refid="class_vector_1a5a75afa6fc2c15cc23d8417c41618769" prot="public" virt="non-virtual"><scope>Stack</scope><name>quickSort</name></member>
+      <member refid="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" prot="public" virt="non-virtual"><scope>Stack</scope><name>quickSort</name></member>
+      <member refid="class_vector_1a592d614579672696df8adb1e0a78c977" prot="public" virt="non-virtual"><scope>Stack</scope><name>remove</name></member>
+      <member refid="class_vector_1a530be4a7f003d040fd3789384e699767" prot="public" virt="non-virtual"><scope>Stack</scope><name>remove</name></member>
+      <member refid="class_vector_1a261234c3b32fa7ada08c0e8e99569633" prot="public" virt="non-virtual"><scope>Stack</scope><name>search</name></member>
+      <member refid="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" prot="public" virt="non-virtual"><scope>Stack</scope><name>search</name></member>
+      <member refid="class_vector_1a9f4eca8f2e01081553a9b19d7faf3986" prot="public" virt="non-virtual"><scope>Stack</scope><name>selectionSort</name></member>
+      <member refid="class_vector_1acfe355f2045dad2f6d06b96527741b0c" prot="public" virt="non-virtual"><scope>Stack</scope><name>selectionSort</name></member>
+      <member refid="class_vector_1a21c14696d987344139f98dca2ec78664" prot="protected" virt="non-virtual"><scope>Stack</scope><name>shrink</name></member>
+      <member refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" prot="public" virt="non-virtual"><scope>Stack</scope><name>size</name></member>
+      <member refid="class_vector_1a34574f8372091eb762da92fdb0120fa7" prot="public" virt="non-virtual"><scope>Stack</scope><name>sort</name></member>
+      <member refid="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" prot="public" virt="non-virtual"><scope>Stack</scope><name>sort</name></member>
+      <member refid="class_stack_1a5408496074d240c8b9bbc37d277e590f" prot="public" virt="non-virtual"><scope>Stack</scope><name>top</name></member>
+      <member refid="class_vector_1ab72df765b363e0a12dd8243a72011c91" prot="public" virt="non-virtual"><scope>Stack</scope><name>traverse</name></member>
+      <member refid="class_vector_1a6b39eb35d16b338d1169a298e85dd642" prot="public" virt="non-virtual"><scope>Stack</scope><name>traverse</name></member>
+      <member refid="class_vector_1a1a7c9c96304c270c296f53ce85ac817f" prot="public" virt="non-virtual"><scope>Stack</scope><name>uniquify</name></member>
+      <member refid="class_vector_1a239eec8daf7c505a947955088bd9d6a6" prot="public" virt="non-virtual"><scope>Stack</scope><name>unsort</name></member>
+      <member refid="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" prot="public" virt="non-virtual"><scope>Stack</scope><name>unsort</name></member>
+      <member refid="class_vector_1a84409bdd044ccd541c644cc08bf9097b" prot="public" virt="non-virtual"><scope>Stack</scope><name>Vector</name></member>
+      <member refid="class_vector_1a97049c8094531cb432db8b887b818663" prot="public" virt="non-virtual"><scope>Stack</scope><name>Vector</name></member>
+      <member refid="class_vector_1aa9fb87b6e9fbca78ae1aacd38dd144ae" prot="public" virt="non-virtual"><scope>Stack</scope><name>Vector</name></member>
+      <member refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" prot="public" virt="non-virtual"><scope>Stack</scope><name>Vector</name></member>
+      <member refid="class_vector_1a569f9d9488e6bca72f68105e9a4102db" prot="public" virt="non-virtual"><scope>Stack</scope><name>Vector</name></member>
+      <member refid="class_vector_1afd524fac19e6d3d69db5198ffe2952b0" prot="public" virt="non-virtual"><scope>Stack</scope><name>~Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

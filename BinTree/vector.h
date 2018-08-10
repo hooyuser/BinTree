@@ -380,7 +380,7 @@ int Vector<T>::deduplicate() //删除无序向量中重复元素
 	int oldSize = _size; //记录原规模
 	Rank i = 1; //从_elem[1]开始
 	while (i < _size) //自前向后逐一考查各元素_elem[i]
-		(find(_elem[i], 0, i) < 0) ? //在其前缀中寻找不乀雷同者（至夗一个）
+		(find(_elem[i], 0, i) < 0) ? //在其前缀中寻找不相雷同者（至少一个）
 		i++ : remove(i); //若无雷同则继续考查其后继，否则初除雷同者
 	return oldSize - _size; //向量觃模发化量，即被初除元素总数
 }

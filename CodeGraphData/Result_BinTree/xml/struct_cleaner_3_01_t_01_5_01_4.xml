@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_cleaner_3_01_t_01_5_01_4" kind="struct" prot="public">
+    <compoundname>Cleaner&lt; T * &gt;</compoundname>
+    <includes refid="_bin_tree_8h" local="no">BinTree.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_cleaner_3_01_t_01_5_01_4_1a5f74f59df1157aa366338b3aba9e8dbc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Cleaner&lt; T * &gt;::clean</definition>
+        <argsstring>(T *x)</argsstring>
+        <name>clean</name>
+        <param>
+          <type>T *</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="68" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="68" bodyend="78"/>
+        <references refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" compoundref="_list_8h" startline="417">n</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" line="67" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h" bodystart="66" bodyend="80"/>
+    <listofallmembers>
+      <member refid="struct_cleaner_3_01_t_01_5_01_4_1a5f74f59df1157aa366338b3aba9e8dbc" prot="public" virt="non-virtual"><scope>Cleaner&lt; T * &gt;</scope><name>clean</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

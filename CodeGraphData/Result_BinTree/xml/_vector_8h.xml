@@ -1,0 +1,802 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_vector_8h" kind="file">
+    <compoundname>Vector.h</compoundname>
+    <includes local="no">time.h</includes>
+    <includes local="no">algorithm</includes>
+    <includedby refid="_stack_8h" local="yes">D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h</includedby>
+    <incdepgraph>
+      <node id="40">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h</label>
+        <link refid="Vector.h"/>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>time.h</label>
+      </node>
+      <node id="42">
+        <label>algorithm</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="45">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/BinTree.h</label>
+        <link refid="_bin_tree_8h"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="43">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h</label>
+        <link refid="Vector.h"/>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Stack.h</label>
+        <link refid="_stack_8h"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_vector" prot="public">Vector</innerclass>
+    <innerclass refid="class_fib" prot="public">Fib</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" prot="public" static="no">
+        <name>DEFAULT_CAPACITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="13" column="9" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" compoundref="_vector_8h" startline="283" endline="294">Vector&lt; T &gt;::expand</referencedby>
+        <referencedby refid="class_vector_1a21c14696d987344139f98dca2ec78664" compoundref="_vector_8h" startline="298" endline="309">Vector&lt; T &gt;::shrink</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_vector_8h_1a0bdd5d1b30da058db8c759759e037ddb" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int Rank</definition>
+        <argsstring></argsstring>
+        <name>Rank</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="12" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_vector_8h_1a8a7740dcfe7d36400b5d8bcce1fd95d1" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double MIN_OCCUPANCY</definition>
+        <argsstring></argsstring>
+        <name>MIN_OCCUPANCY</name>
+        <initializer>= 0.2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="215" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="215" bodyend="-1"/>
+        <referencedby refid="class_vector_1a21c14696d987344139f98dca2ec78664" compoundref="_vector_8h" startline="298" endline="309">Vector&lt; T &gt;::shrink</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_vector_8h_1a5b36aba301d285a732513ec6e4cb35d3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>static Rank binSearch</definition>
+        <argsstring>(T *A, T const &amp;e, Rank lo, Rank hi)</argsstring>
+        <name>binSearch</name>
+        <param>
+          <type>T *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="525" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="525" bodyend="533"/>
+        <referencedby refid="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" compoundref="_vector_8h" startline="516" endline="520">Vector&lt; T &gt;::search</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>static Rank fibSearch</definition>
+        <argsstring>(T *A, T const &amp;e, Rank lo, Rank hi)</argsstring>
+        <name>fibSearch</name>
+        <param>
+          <type>T *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="538" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="538" bodyend="549"/>
+        <references refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" compoundref="_vector_8h" startline="188" endline="191">Fib::get</references>
+        <references refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" compoundref="_vector_8h" startline="200" endline="205">Fib::prev</references>
+        <referencedby refid="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" compoundref="_vector_8h" startline="516" endline="520">Vector&lt; T &gt;::search</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_vector_8h_1a7a31169d91859420f3e77f1a1c8b529f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+        <definition>static Rank simpleFibSearch</definition>
+        <argsstring>(T *A, T const &amp;e, Rank lo, Rank hi)</argsstring>
+        <name>simpleFibSearch</name>
+        <param>
+          <type>T *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>lo</declname>
+        </param>
+        <param>
+          <type><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref></type>
+          <declname>hi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" line="553" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h" bodystart="553" bodyend="569"/>
+        <references refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" compoundref="_vector_8h" startline="188" endline="191">Fib::get</references>
+        <references refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" compoundref="_vector_8h" startline="200" endline="205">Fib::prev</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//vector<sp/>class<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VECTOR_H_</highlight></codeline>
+<codeline lineno="4"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>VECTOR_H_</highlight></codeline>
+<codeline lineno="5"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;stdlib.h&gt;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;algorithm&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_vector_8h_1a0bdd5d1b30da058db8c759759e037ddb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_vector_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref>;<sp/></highlight><highlight class="comment">//秩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_CAPACITY<sp/><sp/>3<sp/>//默认的初始容量（实际应用中可设置为更大）</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="16" refid="class_vector" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_vector" kindref="compound">Vector</ref><sp/></highlight><highlight class="comment">//向量模板类</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19" refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" kindref="member">_size</ref>;<sp/></highlight><highlight class="comment">//规模</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_vector_1ae4ef5e9fdda4214b19696bfb984496f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_vector_1ae4ef5e9fdda4214b19696bfb984496f9" kindref="member">_capacity</ref>;<sp/><sp/></highlight><highlight class="comment">//容量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" kindref="member">_elem</ref>;<sp/></highlight><highlight class="comment">//数据区</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>copyFrom(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>A,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//复制数组区间A[lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>expand();<sp/></highlight><highlight class="comment">//空间不足时扩容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>shrink();<sp/></highlight><highlight class="comment">//装填因子过小时压缩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>bubble(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//扫描交换</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>max(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//选取最大元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>partition(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//轴点构造算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>merge(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>mi,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//归并算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>构造函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_vector_1a84409bdd044ccd541c644cc08bf9097b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_1a84409bdd044ccd541c644cc08bf9097b" kindref="member">Vector</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c<sp/>=<sp/><ref refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" kindref="member">DEFAULT_CAPACITY</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>0,<sp/>T<sp/>v<sp/>=<sp/>0)<sp/></highlight><highlight class="comment">//容量为c、规模为s、所有元素初始为v</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[_capacity<sp/>=<sp/>c];</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(_size<sp/>=<sp/>0;<sp/>_size<sp/>&lt;<sp/>s;<sp/>_elem[_size++]<sp/>=<sp/>v);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//s&lt;=c</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_vector_1a97049c8094531cb432db8b887b818663" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_1a97049c8094531cb432db8b887b818663" kindref="member">Vector</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>A,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" kindref="member">n</ref>)<sp/></highlight><highlight class="comment">//数组整体复制</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copyFrom(A,<sp/>0,<sp/>n);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="class_vector_1aa9fb87b6e9fbca78ae1aacd38dd144ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_1aa9fb87b6e9fbca78ae1aacd38dd144ae" kindref="member">Vector</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>A,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//数组区间复制</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copyFrom(A,<sp/>lo,<sp/>hi);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" kindref="member">Vector</ref>(<ref refid="class_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>V)<sp/></highlight><highlight class="comment">//向量整体复制</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copyFrom(V.<ref refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" kindref="member">_elem</ref>,<sp/>0,<sp/>V.<ref refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" kindref="member">_size</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_vector_1a569f9d9488e6bca72f68105e9a4102db" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_1a569f9d9488e6bca72f68105e9a4102db" kindref="member">Vector</ref>(<ref refid="class_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>V,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//向量区间复制</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>copyFrom(V.<ref refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" kindref="member">_elem</ref>,<sp/>lo,<sp/>hi);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>析构函数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_vector_1afd524fac19e6d3d69db5198ffe2952b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector_1afd524fac19e6d3d69db5198ffe2952b0" kindref="member">~Vector</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>_elem;<sp/><sp/></highlight><highlight class="comment">//释放内部空间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>只读访问接口</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" kindref="member">size</ref>()<sp/>const<sp/></highlight><highlight class="comment">//规模</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_size;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_vector_1a9650adf10e940913fa06f149c4017c25" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a9650adf10e940913fa06f149c4017c25" kindref="member">empty</ref>()<sp/>const<sp/></highlight><highlight class="comment">//判空</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!_size;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>disordered()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//判断向量是否已排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" kindref="member">find</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//无序向量整体查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>find(e,<sp/>0,<sp/>_size);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>find(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//无序向量区间查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_vector_1a261234c3b32fa7ada08c0e8e99569633" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a261234c3b32fa7ada08c0e8e99569633" kindref="member">search</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//有序向量整体查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(0<sp/>&gt;=<sp/>_size)<sp/>?<sp/>-1<sp/>:<sp/>search(e,<sp/>0,<sp/>_size);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>search(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//有序向量区间查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>可写访问接口</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>T&amp;<sp/>operator[]<sp/>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>r)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//重载下标操作符，可以类似于数组形式引用各元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>&amp;<sp/>operator=<sp/>(<ref refid="class_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;);<sp/></highlight><highlight class="comment">//重载赋值操作符，以便直接克隆向量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>r);<sp/></highlight><highlight class="comment">//删除秩为r的元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//删除秩在区间[lo,<sp/>hi)之内的元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>insert(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>r,<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e);<sp/></highlight><highlight class="comment">//插入元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_vector_1a3b46c9e4d47b92c34a8c906f8581320d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a3b46c9e4d47b92c34a8c906f8581320d" kindref="member">insert</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e)<sp/></highlight><highlight class="comment">//默认作为末元素插入</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>insert(_size,<sp/>e);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deduplicate();<sp/></highlight><highlight class="comment">//无序去重</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>uniquify();<sp/></highlight><highlight class="comment">//有序去重</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//对[lo,<sp/>hi)排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" kindref="member">sort</ref>()<sp/></highlight><highlight class="comment">//整体排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>unsort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//对[lo,<sp/>hi)置乱</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" kindref="member">unsort</ref>()<sp/></highlight><highlight class="comment">//整体置乱</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unsort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>insertionSort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/><sp/></highlight><highlight class="comment">//插入排序算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_vector_1abb694ed02296df014f2160cf26e38bf3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1abb694ed02296df014f2160cf26e38bf3" kindref="member">insertionSort</ref>()</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>insertionSort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>selectionSort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//选择排序算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="class_vector_1acfe355f2045dad2f6d06b96527741b0c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1acfe355f2045dad2f6d06b96527741b0c" kindref="member">selectionSort</ref>()</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>selectionSort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>mergeSort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//归并排序算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" kindref="member">mergeSort</ref>()</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mergeSort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bubbleSort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//起泡排序算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" kindref="member">bubbleSort</ref>()</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bubbleSort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>quickSort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/><sp/></highlight><highlight class="comment">//快速排序算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" kindref="member">quickSort</ref>()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quickSort(0,<sp/>_size);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>heapSort(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi);<sp/></highlight><highlight class="comment">//堆排序（稍后结合完全堆讲解）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>遍历</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>traverse(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(*)<sp/>(T&amp;));<sp/></highlight><highlight class="comment">//遍历（使用函数指针，只读或局部性修改）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>VST&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>traverse(VST&amp;);<sp/></highlight><highlight class="comment">//遍历（使用函数对象，可全局性修改）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">};<sp/></highlight><highlight class="comment">//Vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="class_fib" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_fib" kindref="compound">Fib</ref></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{<sp/></highlight><highlight class="comment">//Fibonacci数列类</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="178" refid="class_fib_1a12f13a6523a50fe75aac4ef6f1c7fffc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>f,<sp/><ref refid="class_fib_1a12f13a6523a50fe75aac4ef6f1c7fffc" kindref="member">g</ref>;<sp/></highlight><highlight class="comment">//f<sp/>=<sp/>fib(k<sp/>-<sp/>1),<sp/>g<sp/>=<sp/>fib(k)。均为int型，徆快就会数值溢出</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="181" refid="class_fib_1a690f223b8daff48b899937fefa337b9d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fib_1a690f223b8daff48b899937fefa337b9d" kindref="member">Fib</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" kindref="member">n</ref>)<sp/></highlight><highlight class="comment">//初始化为不小于n的最小Fibonacci项，O(log_phi(n))时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f<sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//f初始化为fib(-1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//g初始化为fib(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(g<sp/>&lt;<sp/>n)<sp/>next();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">()<sp/></highlight><highlight class="comment">//获取当前Fibonacci项，O(1)时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>g;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="class_fib_1a14ec7c27bde6908508e637e8aac94b4e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_fib_1a14ec7c27bde6908508e637e8aac94b4e" kindref="member">next</ref>()<sp/></highlight><highlight class="comment">//转至下一Fibonacci项，O(1)时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>+=<sp/>f;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f<sp/>=<sp/>g<sp/>-<sp/>f;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>g;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" kindref="member">prev</ref>()<sp/></highlight><highlight class="comment">//转至上一Fibonacci项，O(1)时间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f<sp/>=<sp/>g<sp/>-<sp/>f;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>g<sp/>-=<sp/>f;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>g;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//向量模板类实现</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215" refid="_vector_8h_1a8a7740dcfe7d36400b5d8bcce1fd95d1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_vector_8h_1a8a7740dcfe7d36400b5d8bcce1fd95d1" kindref="member">MIN_OCCUPANCY</ref><sp/>=<sp/>0.2;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="218" refid="class_vector_1a3c9a20adc23b97a0e394e65f271d9058" refkind="member"><highlight class="normal"><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a3c9a20adc23b97a0e394e65f271d9058" kindref="member">Vector&lt;T&gt;::max</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(_elem[lo]<sp/>&gt;<sp/>_elem[hi]<sp/>?<sp/>_elem[lo]<sp/>:<sp/>_elem[hi]);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="224" refid="class_vector_1a59adb0e4dfea9ac3ec343b439bac3db6" refkind="member"><highlight class="normal"><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a59adb0e4dfea9ac3ec343b439bac3db6" kindref="member">Vector&lt;T&gt;::partition</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="225"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>first<sp/>=<sp/>lo;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>last<sp/>=<sp/>hi<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>key<sp/>=<sp/>_elem[first];</highlight><highlight class="comment">/*用字表的第一个记录作为枢轴*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(first<sp/>&lt;<sp/>last)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(first<sp/>&lt;<sp/>last<sp/>&amp;&amp;<sp/><sp/>_elem[last]<sp/>&gt;=<sp/>key)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>--last;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[first]<sp/>=<sp/>_elem[last];</highlight><highlight class="comment">/*将比第一个小的移到低端*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(first<sp/>&lt;<sp/>last<sp/>&amp;&amp;<sp/><sp/>_elem[first]<sp/>&lt;=<sp/>key)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++first;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[last]<sp/>=<sp/>_elem[first];</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*将比第一个大的移到高端*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>_elem[first]<sp/>=<sp/>key;</highlight><highlight class="comment">/*枢轴记录到位*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>first;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//元素类型为T</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="class_vector_1ab10e8a359f270775ec46a748015c32c1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1ab10e8a359f270775ec46a748015c32c1" kindref="member">Vector&lt;T&gt;::copyFrom</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>A,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/><sp/></highlight><highlight class="comment">//以数组区间A[lo,<sp/>hi)为蓝本复刢向量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>_elem<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[_capacity<sp/>=<sp/>2<sp/>*<sp/>(hi<sp/>-<sp/>lo)];<sp/></highlight><highlight class="comment">//分配空间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>_size<sp/>=<sp/>0;<sp/><sp/></highlight><highlight class="comment">//规模清零</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(lo<sp/>&lt;<sp/>hi)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[_size++]<sp/>=<sp/>A[lo++];<sp/></highlight><highlight class="comment">//A[lo,<sp/>hi)内的元素逐一复制至_elem[0,<sp/>hi<sp/>-<sp/>lo)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="263" refid="class_vector_1a3777ec2fa8190ae1e020c2af282b7a64" refkind="member"><highlight class="normal">T&amp;<sp/><ref refid="class_vector_1a3777ec2fa8190ae1e020c2af282b7a64" kindref="member">Vector&lt;T&gt;::operator[] </ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>r)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//重载下标运算符[]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(r<sp/>&lt;<sp/>_size)</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_elem[r];</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>_elem[_size<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="273" refid="class_vector_1af97bad371294a807a69114d006d49256" refkind="member"><highlight class="normal"><ref refid="class_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/><ref refid="class_vector_1af97bad371294a807a69114d006d49256" kindref="member">Vector&lt;T&gt;::operator= </ref>(<ref refid="class_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>V)<sp/></highlight><highlight class="comment">//重载赋值运算符=</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_elem)</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>_elem;<sp/></highlight><highlight class="comment">//释放原有内容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>copyFrom(V.<ref refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" kindref="member">_elem</ref>,<sp/>0,<sp/>V.<ref refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" kindref="member">size</ref>());<sp/></highlight><highlight class="comment">//整体复制</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//返回当前对象的引用，以便链式赋值</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="283" refid="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" kindref="member">Vector&lt;T&gt;::expand</ref>()<sp/><sp/></highlight><highlight class="comment">//向量空间不足时扩容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_size<sp/>&lt;<sp/>_capacity)</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//尚未满员时，不必扩容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_capacity<sp/>&lt;<sp/><ref refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" kindref="member">DEFAULT_CAPACITY</ref>)</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_capacity<sp/>=<sp/><ref refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" kindref="member">DEFAULT_CAPACITY</ref>;<sp/></highlight><highlight class="comment">//不低于最小容量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>oldElem<sp/>=<sp/>_elem;<sp/><sp/></highlight><highlight class="comment">//保存原向量地址</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/>_elem<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[_capacity<sp/>&lt;&lt;=<sp/>1];<sp/></highlight><highlight class="comment">//<sp/>容量加倍</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_size;<sp/>i++)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[i]<sp/>=<sp/>oldElem[i];<sp/></highlight><highlight class="comment">//复制原向量内容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>oldElem;<sp/></highlight><highlight class="comment">//释放原空间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="298" refid="class_vector_1a21c14696d987344139f98dca2ec78664" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a21c14696d987344139f98dca2ec78664" kindref="member">Vector&lt;T&gt;::shrink</ref>()<sp/></highlight><highlight class="comment">//装填因子过小时压缩向量所占空间<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_capacity<sp/>&lt;<sp/><ref refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" kindref="member">DEFAULT_CAPACITY</ref><sp/>&lt;&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//不致收缩到<sp/>DEFAULT_CAPACITY<sp/>以下</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_size<sp/>&gt;<sp/>_capacity*<sp/><ref refid="_vector_8h_1a8a7740dcfe7d36400b5d8bcce1fd95d1" kindref="member">MIN_OCCUPANCY</ref>)</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//以MIN_OCCUPANCY为下界</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>oldElem<sp/>=<sp/>_elem;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>_elem<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[_capacity<sp/>&gt;&gt;=<sp/>1];<sp/></highlight><highlight class="comment">//容量减半</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_size;<sp/>i++)</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[i]<sp/>=<sp/>oldElem[i];<sp/></highlight><highlight class="comment">//复制原向量内容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>oldElem;<sp/></highlight><highlight class="comment">//释放原空间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="313" refid="class_vector_1a141a1ab83fe45afab035e8c906e470bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a141a1ab83fe45afab035e8c906e470bb" kindref="member">Vector&lt;T&gt;::disordered</ref>()<sp/>const<sp/><sp/></highlight><highlight class="comment">//返回向量中逆序相邻元素对的总数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" kindref="member">n</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//计数器</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>1;<sp/>i<sp/>&lt;<sp/>_size;<sp/>i++)<sp/></highlight><highlight class="comment">//逐一检查_size<sp/>-<sp/>1对相邻元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_elem[i<sp/>-<sp/>1]<sp/>&gt;<sp/>_elem[i])</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++<ref refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" kindref="member">n</ref>;<sp/></highlight><highlight class="comment">//逆序则计数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" kindref="member">n</ref>;<sp/></highlight><highlight class="comment">//向量有序当且仅当n<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="324" refid="class_vector_1a239eec8daf7c505a947955088bd9d6a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" kindref="member">Vector&lt;T&gt;::unsort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/><sp/></highlight><highlight class="comment">//等概率随机置乱区间[lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>V<sp/>=<sp/>_elem<sp/>+<sp/>lo;<sp/></highlight><highlight class="comment">//将子向量_elem[lo,<sp/>hi)视作另一向量V[0,<sp/>hi<sp/>-<sp/>lo)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>i<sp/>=<sp/>hi<sp/>-<sp/>lo;<sp/>i<sp/>&gt;<sp/>0;<sp/>i--)<sp/></highlight><highlight class="comment">//自后向前</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>srand((</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal">)time(0));</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>swap(V[i<sp/>-<sp/>1],<sp/>V[rand()<sp/>%<sp/>i]);<sp/></highlight><highlight class="comment">//将V[i<sp/>-<sp/>1]与V[0,<sp/>i)中某一元素随机交换</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="337" refid="class_vector_1a448353ec3f7e9d662cf7c7a8a25dca04" refkind="member"><highlight class="normal"><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" kindref="member">Vector&lt;T&gt;::find</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//无序向量的顺序查找：返回最后一个元素e的位置；失败时，返回lo<sp/>-<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((lo<sp/>&lt;<sp/>hi--)<sp/>&amp;&amp;<sp/>(e<sp/>!=<sp/>_elem[hi]));<sp/></highlight><highlight class="comment">//从后向前，顺序查找，直到数组下标hi越界或查找成功</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hi;<sp/></highlight><highlight class="comment">//若hi<sp/>&lt;<sp/>lo，则意味着失败；否则hi即命中元素的秩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//将e作为秩为r元素揑入</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" refkind="member"><highlight class="normal"><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" kindref="member">Vector&lt;T&gt;::insert</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>r,<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e)</highlight></codeline>
+<codeline lineno="346"><highlight class="normal">{<sp/></highlight><highlight class="comment">//assert:<sp/>0<sp/>&lt;=<sp/>r<sp/>&lt;=<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/>expand();<sp/></highlight><highlight class="comment">//若有必要，扩容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>_size;<sp/>i<sp/>&gt;<sp/>r;<sp/>i--)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[i]<sp/>=<sp/>_elem[i<sp/>-<sp/>1];<sp/></highlight><highlight class="comment">//自后向前，后继元素顺次后移一个单元</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/>_elem[r]<sp/>=<sp/>e;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/>_size++;<sp/></highlight><highlight class="comment">//置入新元素幵更新容量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;<sp/></highlight><highlight class="comment">//迒回秩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="357" refid="class_vector_1a530be4a7f003d040fd3789384e699767" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a592d614579672696df8adb1e0a78c977" kindref="member">Vector&lt;T&gt;::remove</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//初除匙间[lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lo<sp/>==<sp/>hi)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/></highlight><highlight class="comment">//出于效率考虑，单独处理退化情况，比如remove(0,<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(hi<sp/>&lt;<sp/>_size)</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[lo++]<sp/>=<sp/>_elem[hi++];<sp/></highlight><highlight class="comment">//[hi,<sp/>_size)顺次前移hi<sp/>-<sp/>lo个单元</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/>_size<sp/>=<sp/>lo;<sp/></highlight><highlight class="comment">//更新规模，直接丢弃尾部[lo,<sp/>_size<sp/>=<sp/>hi)区间</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>shrink();<sp/></highlight><highlight class="comment">//若有必要，则缩容</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>hi<sp/>-<sp/>lo;<sp/></highlight><highlight class="comment">//返回被初除元素癿数目</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="369" refid="class_vector_1a592d614579672696df8adb1e0a78c977" refkind="member"><highlight class="normal">T<sp/><ref refid="class_vector_1a592d614579672696df8adb1e0a78c977" kindref="member">Vector&lt;T&gt;::remove</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>r)<sp/></highlight><highlight class="comment">//删除向量中秩为r的元素，0<sp/>&lt;=<sp/>r<sp/>&lt;<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>T<sp/>e<sp/>=<sp/>_elem[r];<sp/></highlight><highlight class="comment">//备份被删除元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(r,<sp/>r<sp/>+<sp/>1);<sp/></highlight><highlight class="comment">//调用区间删除算法，等效于对区间[r,<sp/>r<sp/>+<sp/>1)的删除</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>e;<sp/></highlight><highlight class="comment">//返回被删除元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="378" refid="class_vector_1a770586f25289d2c07e57803d8fada81e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a770586f25289d2c07e57803d8fada81e" kindref="member">Vector&lt;T&gt;::deduplicate</ref>()<sp/></highlight><highlight class="comment">//删除无序向量中重复元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>oldSize<sp/>=<sp/>_size;<sp/></highlight><highlight class="comment">//记录原规模</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>i<sp/>=<sp/>1;<sp/></highlight><highlight class="comment">//从_elem[1]开始</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>_size)<sp/></highlight><highlight class="comment">//自前向后逐一考查各元素_elem[i]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(find(_elem[i],<sp/>0,<sp/>i)<sp/>&lt;<sp/>0)<sp/>?<sp/></highlight><highlight class="comment">//在其前缀中寻找不乀雷同者（至夗一个）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++<sp/>:<sp/></highlight><highlight class="keyword">remove</highlight><highlight class="normal">(i);<sp/></highlight><highlight class="comment">//若无雷同则继续考查其后继，否则初除雷同者</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>oldSize<sp/>-<sp/>_size;<sp/></highlight><highlight class="comment">//向量觃模发化量，即被初除元素总数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="390" refid="class_vector_1a1a7c9c96304c270c296f53ce85ac817f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a1a7c9c96304c270c296f53ce85ac817f" kindref="member">Vector&lt;T&gt;::uniquify</ref>()<sp/></highlight><highlight class="comment">//有序向量重复元素剔除算法</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//各对互异“相邻”元素的秩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(++j<sp/>&lt;<sp/>_size)<sp/></highlight><highlight class="comment">//逐一扫描，直至末元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_elem[i]<sp/>!=<sp/>_elem[j])<sp/></highlight><highlight class="comment">//跳过雷同者</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[++i]<sp/>=<sp/>_elem[j];<sp/></highlight><highlight class="comment">//发现不同元素时，向前移至紧邻于前者右侧</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/>_size<sp/>=<sp/>++i;</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/>shrink();<sp/></highlight><highlight class="comment">//直接截除尾部多余元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>j<sp/>-<sp/>i;<sp/></highlight><highlight class="comment">//向量规模变化量，即被删除元素总数</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="399"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="403" refid="class_vector_1a34574f8372091eb762da92fdb0120fa7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" kindref="member">Vector&lt;T&gt;::sort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//向量区间[lo,<sp/>hi)排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="404"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(rand()<sp/>%<sp/>5)<sp/></highlight><highlight class="comment">//随机选取排序算法。可根据具体问题的特点灵活选取或扩充</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/><sp/>bubbleSort(lo,<sp/>hi);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//起泡排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/><sp/>selectionSort(lo,<sp/>hi);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//选择排序（习题）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/><sp/>mergeSort(lo,<sp/>hi);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//归并排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:<sp/><sp/>heapSort(lo,<sp/>hi);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//堆排序（稍后介绍）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>quickSort(lo,<sp/>hi);<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//快速排序（稍后介绍）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//向量的起泡排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417" refid="class_vector_1a8d6d5c4cff89adf2b4070a2bebea7fe2" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" kindref="member">Vector&lt;T&gt;::bubbleSort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//assert:<sp/>0<sp/>&lt;=<sp/>lo<sp/>&lt;<sp/>hi<sp/>&lt;=<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(lo<sp/>&lt;<sp/>(hi<sp/>=<sp/>bubble(lo,<sp/>hi)));</highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}<sp/></highlight><highlight class="comment">//逐趟做扫描交换，直至全序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="424" refid="class_vector_1a5a75afa6fc2c15cc23d8417c41618769" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" kindref="member">Vector&lt;T&gt;::quickSort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="425"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hi<sp/>-<sp/>lo<sp/>&lt;=<sp/>1)</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>pivot<sp/>=<sp/>partition(lo,<sp/>hi);</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quickSort(lo,<sp/>pivot);</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>quickSort(pivot<sp/>+<sp/>1,<sp/>hi);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="434"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="438" refid="class_vector_1a6e5808593d4d61536ba40e1508128111" refkind="member"><highlight class="normal"><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a6e5808593d4d61536ba40e1508128111" kindref="member">Vector&lt;T&gt;::bubble</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//一趟扫描交换</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="439"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>last<sp/>=<sp/>lo;<sp/></highlight><highlight class="comment">//最右侧的逆序对初始化为[lo<sp/>-<sp/>1,<sp/>lo]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(++lo<sp/>&lt;<sp/>hi)</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="comment">//自左向右，逐一检查各对相邻元素</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_elem[lo<sp/>-<sp/>1]<sp/>&gt;<sp/>_elem[lo])</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//若逆序，则</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>last<sp/>=<sp/>lo;<sp/></highlight><highlight class="comment">//更新最右侧逆序对位置记录，并通过交换使局部有序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>swap(_elem[lo<sp/>-<sp/>1],<sp/>_elem[lo]);</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>last;<sp/></highlight><highlight class="comment">//返回最右侧的逆序对位置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="450"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="454" refid="class_vector_1a9f4eca8f2e01081553a9b19d7faf3986" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1acfe355f2045dad2f6d06b96527741b0c" kindref="member">Vector&lt;T&gt;::selectionSort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/><sp/></highlight><highlight class="comment">//选择排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>hi<sp/>-<sp/>1;<sp/>i<sp/>&gt;<sp/>lo;<sp/>i--)</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>lo;</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>lo<sp/>+<sp/>1;<sp/>j<sp/>&lt;=<sp/>i;<sp/>j++)</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_elem[j]<sp/>&gt;<sp/>_elem[max])</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>max<sp/>=<sp/>j;</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>swap(_elem[i],<sp/>_elem[max]);</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="469" refid="class_vector_1a7b6bc31bde56aaf172b97061fd099a1f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1abb694ed02296df014f2160cf26e38bf3" kindref="member">Vector&lt;T&gt;::insertionSort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)<sp/></highlight><highlight class="comment">//插入排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>lo<sp/>+<sp/>1;<sp/>i<sp/>&lt;<sp/>hi;<sp/>i++)<sp/></highlight><highlight class="comment">//进行hi-lo-1轮排序，第i轮将_elem[i]插入到[lo,i)中的恰当位置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>temp<sp/>=<sp/>_elem[i];</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>index<sp/>=<sp/>search(_elem[i],<sp/>lo,<sp/>i)<sp/>+<sp/>1;<sp/><sp/></highlight><highlight class="comment">//应该插入_elem[i]的位置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>i;<sp/>j<sp/>&gt;<sp/>index;<sp/>j--)</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[j]<sp/>=<sp/>_elem[j<sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_elem[index]<sp/>=<sp/>temp;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="479"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//向量归并排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="483" refid="class_vector_1ac32887865455ba3b042893b86b115ad4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" kindref="member">Vector&lt;T&gt;::mergeSort</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="484"><highlight class="normal">{<sp/></highlight><highlight class="comment">//0<sp/>&lt;=<sp/>lo<sp/>&lt;<sp/>hi<sp/>&lt;=<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hi<sp/>-<sp/>lo<sp/>&lt;<sp/>2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//单元素区间自然有序，否则...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mi<sp/>=<sp/>(lo<sp/>+<sp/>hi)<sp/>/<sp/>2;<sp/></highlight><highlight class="comment">//以中点为界</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>mergeSort(lo,<sp/>mi);</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/>mergeSort(mi,<sp/>hi);<sp/></highlight><highlight class="comment">//分别排序</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/>merge(lo,<sp/>mi,<sp/>hi);<sp/></highlight><highlight class="comment">//归并</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"></highlight></codeline>
+<codeline lineno="492"><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//有序向量的归并</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="494" refid="class_vector_1a42e6efced5c508e4c995f0ef457542ce" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1a42e6efced5c508e4c995f0ef457542ce" kindref="member">Vector&lt;T&gt;::merge</ref>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>mi,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight><highlight class="comment">//各自有序的子向量[lo,<sp/>mi)和[mi,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="495"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>A<sp/>=<sp/>_elem<sp/>+<sp/>lo;<sp/></highlight><highlight class="comment">//合并后的向量A[0,<sp/>hi<sp/>-<sp/>lo)<sp/>=<sp/>_elem[lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lb<sp/>=<sp/>mi<sp/>-<sp/>lo;</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>B<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>T[lb];<sp/></highlight><highlight class="comment">//前子向量B[0,<sp/>lb)<sp/>=<sp/>_elem[lo,<sp/>mi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>lb;<sp/>i++)</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B[i]<sp/>=<sp/>A[i];<sp/></highlight><highlight class="comment">//复制前子向量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lc<sp/>=<sp/>hi<sp/>-<sp/>mi;</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>C<sp/>=<sp/>_elem<sp/>+<sp/>mi;<sp/></highlight><highlight class="comment">//后子向量C[0,<sp/>lc)<sp/>=<sp/>_elem[mi,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>i<sp/>=<sp/>0,<sp/>j<sp/>=<sp/>0,<sp/>k<sp/>=<sp/>0;<sp/>(j<sp/>&lt;<sp/>lb)<sp/>||<sp/>(k<sp/>&lt;<sp/>lc);<sp/>)</highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//B[j]和C[k]中的小者续至A末尾</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((j<sp/>&lt;<sp/>lb)<sp/>&amp;&amp;<sp/>(!(k<sp/>&lt;<sp/>lc)<sp/>||<sp/>(B[j]<sp/>&lt;=<sp/>C[k])))<sp/>A[i++]<sp/>=<sp/>B[j++];</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((k<sp/>&lt;<sp/>lc)<sp/>&amp;&amp;<sp/>(!(j<sp/>&lt;<sp/>lb)<sp/>||<sp/>(C[k]<sp/>&lt;<sp/>B[j])))<sp/>A[i++]<sp/>=<sp/>C[k++];</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>B;<sp/></highlight><highlight class="comment">//释放临时空间B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="512"><highlight class="normal">}<sp/></highlight><highlight class="comment">//归并后得到完整的有序向量[lo,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="513"><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"></highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//在有序向量的区间[lo,<sp/>hi)内，确定小于等于e的最后一个节点的秩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516" refid="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" refkind="member"><highlight class="normal"><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="class_vector_1a261234c3b32fa7ada08c0e8e99569633" kindref="member">Vector&lt;T&gt;::search</ref>(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="517"><highlight class="keyword"></highlight><highlight class="normal">{<sp/></highlight><highlight class="comment">//assert:<sp/>0<sp/>&lt;=<sp/>lo<sp/>&lt;<sp/>hi<sp/>&lt;=<sp/>_size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(rand()<sp/>%<sp/>2)<sp/>?<sp/></highlight><highlight class="comment">//按各50%的概率随机使用二分查找或Fibonacci查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_vector_8h_1a5b36aba301d285a732513ec6e4cb35d3" kindref="member">binSearch</ref>(_elem,<sp/>e,<sp/>lo,<sp/>hi)<sp/>:<sp/><ref refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" kindref="member">fibSearch</ref>(_elem,<sp/>e,<sp/>lo,<sp/>hi);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"></highlight><highlight class="comment">//<sp/>二分查找算法（版本C）：在有序向量的区间[lo,<sp/>hi)内查找元素e，0<sp/>&lt;=<sp/>lo<sp/>&lt;=<sp/>hi<sp/>&lt;=<sp/>_size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="524"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="525" refid="_vector_8h_1a5b36aba301d285a732513ec6e4cb35d3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="_vector_8h_1a5b36aba301d285a732513ec6e4cb35d3" kindref="member">binSearch</ref>(T*<sp/>A,<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="526"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(lo<sp/>&lt;<sp/>hi)</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//每步迭代仅需做一次比较判断，有两个分支</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>mi<sp/>=<sp/>(lo<sp/>+<sp/>hi)<sp/>&gt;&gt;<sp/>1;<sp/></highlight><highlight class="comment">//以中点为轴点（区间宽度的折半，等效于宽度之数值表示的右移）</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(e<sp/>&lt;<sp/>A[mi])<sp/>?<sp/>hi<sp/>=<sp/>mi<sp/>:<sp/>lo<sp/>=<sp/>mi<sp/>+<sp/>1;<sp/></highlight><highlight class="comment">//经比较后确定深入[lo,<sp/>mi)或(mi,<sp/>hi)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//成功查找不能提前终止</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>--lo;<sp/></highlight><highlight class="comment">//循环结束时，lo为大于e的元素的最小秩，故lo<sp/>-<sp/>1即不大于e的元素的最大秩</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal">}<sp/></highlight><highlight class="comment">//有多个命中元素时，总能保证返回秩最大者；查找失败时，能够返回失败的位置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Fibonacci查找算法（版本A）：在有序向量的区间[lo,<sp/>hi)内查找元素e，0<sp/>&lt;=<sp/>lo<sp/>&lt;=<sp/>hi<sp/>&lt;=<sp/>_size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="538" refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" kindref="member">fibSearch</ref>(T*<sp/>A,<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="539"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fib" kindref="compound">Fib</ref><sp/>fib(hi<sp/>-<sp/>lo);<sp/></highlight><highlight class="comment">//用O(log_phi(n<sp/>=<sp/>hi<sp/>-<sp/>lo)时间创建Fib数列</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(lo<sp/>&lt;<sp/>hi)<sp/></highlight><highlight class="comment">//每步迭代可能要做两次比较判断，有三个分支</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(hi<sp/>-<sp/>lo<sp/>&lt;<sp/>fib.<ref refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" kindref="member">get</ref>())</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fib.<ref refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" kindref="member">prev</ref>();<sp/></highlight><highlight class="comment">//通过向前顺序查找（分摊O(1)）——至多迭代几次？</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>mi<sp/>=<sp/>lo<sp/>+<sp/>fib.<ref refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" kindref="member">get</ref>()<sp/>-<sp/>1;<sp/></highlight><highlight class="comment">//确定形如Fib(k)<sp/>-<sp/>1的轴点</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(e<sp/>&lt;<sp/>A[mi])<sp/>?<sp/>hi<sp/>=<sp/>mi<sp/>:<sp/>lo<sp/>=<sp/>mi<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//成功查找可以提前终止</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>--lo;<sp/></highlight><highlight class="comment">//查找失败</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal">}<sp/></highlight><highlight class="comment">//有多个命中元素时，不能保证返回秩最大者；失败时，简单地返回-1，而不能指示失败的位置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="553" refid="_vector_8h_1a7a31169d91859420f3e77f1a1c8b529f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/><ref refid="_vector_8h_1a7a31169d91859420f3e77f1a1c8b529f" kindref="member">simpleFibSearch</ref>(T*<sp/>A,<sp/>T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>e,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>lo,<sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>hi)</highlight></codeline>
+<codeline lineno="554"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_fib" kindref="compound">Fib</ref><sp/>fib(hi<sp/>-<sp/>lo);<sp/></highlight><highlight class="comment">//用O(log_phi(n<sp/>=<sp/>hi<sp/>-<sp/>lo)时间创建Fib数列</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(lo<sp/>&lt;<sp/>hi)<sp/></highlight><highlight class="comment">//每步迭代可能要做两次比较判断，有三个分支</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(hi<sp/>-<sp/>lo<sp/>&lt;<sp/>fib.<ref refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" kindref="member">get</ref>())</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fib.<ref refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" kindref="member">prev</ref>();<sp/></highlight><highlight class="comment">//通过向前顺序查找（分摊O(1)）——至多迭代几次？</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kindref="member">Rank</ref><sp/>mi<sp/>=<sp/>lo<sp/>+<sp/>fib.<ref refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" kindref="member">get</ref>()<sp/>-<sp/>1;<sp/></highlight><highlight class="comment">//确定形如Fib(k)<sp/>-<sp/>1的轴点</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(e<sp/>&lt;<sp/>A[mi])</highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hi<sp/>=<sp/>mi;<sp/></highlight><highlight class="comment">//深入前半段[lo,<sp/>mi)继续查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(A[mi]<sp/>&lt;<sp/>e)</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lo<sp/>=<sp/>mi<sp/>+<sp/>1;<sp/></highlight><highlight class="comment">//深入后半段(mi,<sp/>hi)继续查找</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mi;<sp/></highlight><highlight class="comment">//在mi处命中<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//成功查找可以提前终止</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;<sp/></highlight><highlight class="comment">//查找失败</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal">}<sp/></highlight><highlight class="comment">//有多个命中元素时，不能保证返回秩最大者；失败时，简单地返回-1，而不能指示失败的位置</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="573" refid="class_vector_1ab72df765b363e0a12dd8243a72011c91" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1ab72df765b363e0a12dd8243a72011c91" kindref="member">Vector&lt;T&gt;::traverse</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">(*)(T<sp/>&amp;))</highlight></codeline>
+<codeline lineno="574"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_size;<sp/>i++)<sp/>visit(_elem[i]);<sp/></highlight><highlight class="comment">//遍历向量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//元素类型</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>VST&gt;<sp/></highlight><highlight class="comment">//操作器</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="581" refid="class_vector_1a6b39eb35d16b338d1169a298e85dd642" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_vector_1ab72df765b363e0a12dd8243a72011c91" kindref="member">Vector&lt;T&gt;::traverse</ref>(VST&amp;<sp/>visit)<sp/></highlight><highlight class="comment">//倚劣函数对象机刢</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="582"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>_size;<sp/>i++)<sp/>visit(_elem[i]);<sp/></highlight><highlight class="comment">//遍历向量</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="584"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight></codeline>
+    </programlisting>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Vector.h"/>
+  </compounddef>
+</doxygen>

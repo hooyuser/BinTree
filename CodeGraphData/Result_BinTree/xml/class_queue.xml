@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_queue" kind="class" prot="public">
+    <compoundname>Queue</compoundname>
+    <basecompoundref refid="class_list" prot="public" virt="non-virtual">List&lt; T &gt;</basecompoundref>
+    <includes refid="_queue_8h" local="no">Queue.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_queue_1af50d72a629d7a94a769864fdab163420" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Queue&lt; T &gt;::enqueue</definition>
+        <argsstring>(T const &amp;e)</argsstring>
+        <name>enqueue</name>
+        <param>
+          <type>T const &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" line="8" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" bodystart="8" bodyend="8"/>
+        <referencedby refid="class_bin_node_1a80367bc6fb96d3dcd1f81509e263b811" compoundref="_bin_tree_8h" startline="179" endline="190">BinNode&lt; T &gt;::travLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_queue_1a036f122e9bf968c80ccd73b9d38017c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Queue&lt; T &gt;::dequeue</definition>
+        <argsstring>()</argsstring>
+        <name>dequeue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" line="9" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" bodystart="9" bodyend="9"/>
+        <referencedby refid="class_bin_node_1a80367bc6fb96d3dcd1f81509e263b811" compoundref="_bin_tree_8h" startline="179" endline="190">BinNode&lt; T &gt;::travLevel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_queue_1a20bfe4dbbb985a055631c50a19d451bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T&amp; Queue&lt; T &gt;::front</definition>
+        <argsstring>()</argsstring>
+        <name>front</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" line="10" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="17">
+        <label>Queue&lt; T &gt;</label>
+        <link refid="class_queue"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>List&lt; T &gt;</label>
+        <link refid="class_list"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="19">
+        <label>Queue&lt; T &gt;</label>
+        <link refid="class_queue"/>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>List&lt; T &gt;</label>
+        <link refid="class_list"/>
+      </node>
+    </collaborationgraph>
+    <location file="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" line="6" column="1" bodyfile="D:/CHY/Program/C++/DSA/5/BinTree/BinTree/Queue.h" bodystart="6" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_list_1a503c45a9fa1c1b6cd144c6d90d4d6f62" prot="protected" virt="non-virtual"><scope>Queue</scope><name>clear</name></member>
+      <member refid="class_list_1a94fcf6de95789700b7209c0f39292c7c" prot="protected" virt="non-virtual"><scope>Queue</scope><name>copyNodes</name></member>
+      <member refid="class_list_1a04815240174e3eb63b6c9c6f647138ce" prot="public" virt="non-virtual"><scope>Queue</scope><name>deduplicate</name></member>
+      <member refid="class_queue_1a036f122e9bf968c80ccd73b9d38017c0" prot="public" virt="non-virtual"><scope>Queue</scope><name>dequeue</name></member>
+      <member refid="class_list_1a7f9880a8bf94b206cee429d7bfa98001" prot="public" virt="non-virtual"><scope>Queue</scope><name>disordered</name></member>
+      <member refid="class_list_1a0b937d056c2cc96d12e594f9647d5cfc" prot="public" virt="non-virtual"><scope>Queue</scope><name>e</name></member>
+      <member refid="class_list_1ad96bf379b8e75539b20ad30d10f10269" prot="public" virt="non-virtual"><scope>Queue</scope><name>empty</name></member>
+      <member refid="class_queue_1af50d72a629d7a94a769864fdab163420" prot="public" virt="non-virtual"><scope>Queue</scope><name>enqueue</name></member>
+      <member refid="class_queue_1a20bfe4dbbb985a055631c50a19d451bc" prot="public" virt="non-virtual"><scope>Queue</scope><name>front</name></member>
+      <member refid="class_list_1a71317037748180534e54d3ff01f875a1" prot="protected" virt="non-virtual"><scope>Queue</scope><name>init</name></member>
+      <member refid="class_list_1a5f056da1661722bb64bf3edc7572c9c2" prot="protected" virt="non-virtual"><scope>Queue</scope><name>insertionSort</name></member>
+      <member refid="class_list_1a5c5e27671b21b3815d4e25b953c69454" prot="public" virt="non-virtual"><scope>Queue</scope><name>List</name></member>
+      <member refid="class_list_1a47912745b8fdc670d6c71d86fe4aace5" prot="public" virt="non-virtual"><scope>Queue</scope><name>List</name></member>
+      <member refid="class_list_1a247e8c2db3cc2b1d5e688ca8e58ca1ee" prot="public" virt="non-virtual"><scope>Queue</scope><name>List</name></member>
+      <member refid="class_list_1adf64f5f688a32f56ee6ac60fbac84a8b" prot="public" virt="non-virtual"><scope>Queue</scope><name>List</name></member>
+      <member refid="class_list_1a07d4d9eac772dbdd50f59a34a107fc05" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a9c99e57e47cceed01befeed89a81a531" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a147bb29ce3e2fc5b91755d19cb01926f" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1aedbaf0d1ca185cca29a93203e7313c0c" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a5f138d05db90af9091585bd0931ee1ec" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a08952d5b6d65436b3218c8ee8259e537" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1adca6bd9668e89893dfca69955db201bc" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ac18f3e0b2ffaf2af0b7562077ebcdbcb" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a658e4c73ab10ce85633ed69b61d042f6" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1ae5361994abae18e5f605cd13e2f2823c" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1aa7ae016bd7facc1dab73eb54f5cf3fda" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1aabb04ef20bd3a3cc9e226bdd72824f85" prot="public" virt="non-virtual"><scope>Queue</scope><name>ListNodePosi</name></member>
+      <member refid="class_list_1a4eaee2170920805bef1234f96aa58fbe" prot="protected" virt="non-virtual"><scope>Queue</scope><name>merge</name></member>
+      <member refid="class_list_1aad52d855405114c998d415c77eb78183" prot="public" virt="non-virtual"><scope>Queue</scope><name>merge</name></member>
+      <member refid="class_list_1a1ca15b61836a2f27255d1d8baec4c654" prot="protected" virt="non-virtual"><scope>Queue</scope><name>mergeSort</name></member>
+      <member refid="class_list_1afb61a226f22e12743d0396f29e244824" prot="public" virt="non-virtual"><scope>Queue</scope><name>n</name></member>
+      <member refid="class_list_1a1d2aa7b5544f5dee3e38f63bade6dc66" prot="public" virt="non-virtual"><scope>Queue</scope><name>operator[]</name></member>
+      <member refid="class_list_1afa020c0e05021aba5138f75e8cff9fd2" prot="public" virt="non-virtual"><scope>Queue</scope><name>remove</name></member>
+      <member refid="class_list_1a6066ea09838e1a42bec3098d18e85fda" prot="public" virt="non-virtual"><scope>Queue</scope><name>reverse</name></member>
+      <member refid="class_list_1ac8aa25bd64067f7411552e482d72c36f" prot="protected" virt="non-virtual"><scope>Queue</scope><name>selectionSort</name></member>
+      <member refid="class_list_1adaf7d93d54b029790ccf98f521ec8837" prot="public" virt="non-virtual"><scope>Queue</scope><name>size</name></member>
+      <member refid="class_list_1a5d88833fa5e0ee6cba3d1aef3eec0499" prot="public" virt="non-virtual"><scope>Queue</scope><name>sort</name></member>
+      <member refid="class_list_1adcdf869b2506e2332052eff47afc8412" prot="public" virt="non-virtual"><scope>Queue</scope><name>sort</name></member>
+      <member refid="class_list_1a6572713c78d660cd5f354588432be185" prot="public" virt="non-virtual"><scope>Queue</scope><name>traverse</name></member>
+      <member refid="class_list_1a0e4c1352f77c6015725eecffe38e4c8c" prot="public" virt="non-virtual"><scope>Queue</scope><name>traverse</name></member>
+      <member refid="class_list_1a0c2aafff2b9e0ba54359dcb59f627f7a" prot="public" virt="non-virtual"><scope>Queue</scope><name>uniquify</name></member>
+      <member refid="class_list_1a4d0d8420d56bb1ab184bfbeb190ee710" prot="public" virt="non-virtual"><scope>Queue</scope><name>valid</name></member>
+      <member refid="class_list_1a2b58189090f6e5ce52939c9195e59e85" prot="public" virt="non-virtual"><scope>Queue</scope><name>~List</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_bin_node" kind="class"><name>BinNode</name>
+    <member refid="class_bin_node_1a0c54ccfff1494cf228b2cc85dcc5891a" kind="variable"><name>data</name></member>
+    <member refid="class_bin_node_1a1c22594e02838774e325226cbe46483d" kind="variable"><name>height</name></member>
+    <member refid="class_bin_node_1a63b1cf9c82ff96654565dd358a6a7e78" kind="variable"><name>npl</name></member>
+    <member refid="class_bin_node_1a782eed65cceb9da57b2da9a3838ed671" kind="variable"><name>color</name></member>
+    <member refid="class_bin_node_1a55ffc2f87a662dcd25c6000226709c4f" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_node_1a9f5e5d42123c8a0b03e559e350e44516" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_node_1a40dd8ff4036b8787346734869f4a26ef" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_node_1a72a6094bf777c8b9bfcf9f4d6d82f949" kind="function"><name>BinNode</name></member>
+    <member refid="class_bin_node_1a916fc6791291aaa4273c7bc18153e291" kind="function"><name>BinNode</name></member>
+    <member refid="class_bin_node_1a7cb73b65505bef08ed799623e8d20c12" kind="function"><name>size</name></member>
+    <member refid="class_bin_node_1a0b75ebae76368c18ca0b0ee35a6b9b1f" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_node_1ac43580db205701cb5940f02df79a20e7" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_node_1aae73293657302bc2cfdb94f65a4f1106" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_node_1a80367bc6fb96d3dcd1f81509e263b811" kind="function"><name>travLevel</name></member>
+    <member refid="class_bin_node_1a514dd898086d0fe4b27dd7c754b5c428" kind="function"><name>travPre</name></member>
+    <member refid="class_bin_node_1ae8064480f15f90d2adfad7f09ddc8e9e" kind="function"><name>travIn</name></member>
+    <member refid="class_bin_node_1a7f4f0233c749de4593b0d2b4ed4ecc14" kind="function"><name>travPost</name></member>
+    <member refid="class_bin_node_1afab88148904645d8ef819c49c3318922" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_bin_node_1adbef2bcd4422e2896fce7f19405068cb" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="class_bin_tree" kind="class"><name>BinTree</name>
+    <member refid="class_bin_tree_1a0a9473933a63254fbdd11b5eef31e782" kind="variable"><name>_size</name></member>
+    <member refid="class_bin_tree_1ae3a45e720aa8a517aae4cf553d8e44d4" kind="variable"><name>e</name></member>
+    <member refid="class_bin_tree_1a2ee104cc440b5852f44d95517241deed" kind="variable"><name>T</name></member>
+    <member refid="class_bin_tree_1ab0dba5f1a17136966ada44b91c7f5ac5" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1accadaa12c1dd3a8afa852d505e0000c9" kind="function"><name>updateHeight</name></member>
+    <member refid="class_bin_tree_1a307a1ee6aa9bd4a40486a4e3a23231cc" kind="function"><name>updateHeightAbove</name></member>
+    <member refid="class_bin_tree_1a47eef22d29cd023449d97c073c08e5b6" kind="function"><name>BinTree</name></member>
+    <member refid="class_bin_tree_1a9d793ba34b02c7da9faeb423ddd61d56" kind="function"><name>~BinTree</name></member>
+    <member refid="class_bin_tree_1a4d9e120f819788fa4e90005412c9900b" kind="function"><name>size</name></member>
+    <member refid="class_bin_tree_1a9ca8d7ae95b9bed51eb43f30c8d2bd58" kind="function"><name>empty</name></member>
+    <member refid="class_bin_tree_1a5d28af397d5bbd77538a5748836fc1ba" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1ae023cbe549ff4c3956696e1bba8d5559" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1a4dbe6df0d24f3b3d1d6f0bbe5e22d410" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1a113acda3d8cde931abb5c539120587b1" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1a8fbe64978fb0e4cb80d63954dde4fc62" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1a0e027a5c8f72464d722ff8d7ad1af368" kind="function"><name>BinNodePosi</name></member>
+    <member refid="class_bin_tree_1a19427aa313d2b9338a3cfb86263687a7" kind="function"><name>remove</name></member>
+    <member refid="class_bin_tree_1a28a7374358ca84d2659873f75ee29724" kind="function"><name>secede</name></member>
+    <member refid="class_bin_tree_1aab3f5192b60ce9bf9d4a738fe0e090a6" kind="function"><name>travLevel</name></member>
+    <member refid="class_bin_tree_1a9adcae536f47eb811877f6f4345b0cfd" kind="function"><name>travPre</name></member>
+    <member refid="class_bin_tree_1ae93f244299644f9dc7ffe61c22ee52d0" kind="function"><name>travIn</name></member>
+    <member refid="class_bin_tree_1ade878958b23b6b7b13e3b7766aac2395" kind="function"><name>travPost</name></member>
+    <member refid="class_bin_tree_1ade80d982ecfef5112f773b26aed3dd9c" kind="function"><name>operator&lt;</name></member>
+    <member refid="class_bin_tree_1a2b8788470fc0bfa3a85d9f81ebda8f5c" kind="function"><name>operator==</name></member>
+  </compound>
+  <compound refid="struct_cleaner" kind="struct"><name>Cleaner</name>
+    <member refid="struct_cleaner_1aa826fc5ace2c297113b6ee286c38d37a" kind="function"><name>clean</name></member>
+  </compound>
+  <compound refid="struct_cleaner_3_01_t_01_5_01_4" kind="struct"><name>Cleaner&lt; T * &gt;</name>
+    <member refid="struct_cleaner_3_01_t_01_5_01_4_1a5f74f59df1157aa366338b3aba9e8dbc" kind="function"><name>clean</name></member>
+  </compound>
+  <compound refid="class_fib" kind="class"><name>Fib</name>
+    <member refid="class_fib_1a157f5e60dfd2f6b77104bb5048aee8a0" kind="variable"><name>f</name></member>
+    <member refid="class_fib_1a12f13a6523a50fe75aac4ef6f1c7fffc" kind="variable"><name>g</name></member>
+    <member refid="class_fib_1a690f223b8daff48b899937fefa337b9d" kind="function"><name>Fib</name></member>
+    <member refid="class_fib_1a81f9f5e1184553610c48659e37dda1b7" kind="function"><name>get</name></member>
+    <member refid="class_fib_1a14ec7c27bde6908508e637e8aac94b4e" kind="function"><name>next</name></member>
+    <member refid="class_fib_1a8c72f31fddb27db2859f93e3cbfa8789" kind="function"><name>prev</name></member>
+  </compound>
+  <compound refid="class_list" kind="class"><name>List</name>
+    <member refid="class_list_1ad56fcbd2da2271dce020bb933349cba4" kind="variable"><name>_size</name></member>
+    <member refid="class_list_1afb61a226f22e12743d0396f29e244824" kind="variable"><name>n</name></member>
+    <member refid="class_list_1a0b937d056c2cc96d12e594f9647d5cfc" kind="variable"><name>e</name></member>
+    <member refid="class_list_1a227a06c8fafefeec997b372cffcb282e" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1ac9c76b12a1bcf9d6908bb202c7cbb7c8" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1a71317037748180534e54d3ff01f875a1" kind="function"><name>init</name></member>
+    <member refid="class_list_1a503c45a9fa1c1b6cd144c6d90d4d6f62" kind="function"><name>clear</name></member>
+    <member refid="class_list_1a94fcf6de95789700b7209c0f39292c7c" kind="function"><name>copyNodes</name></member>
+    <member refid="class_list_1a4eaee2170920805bef1234f96aa58fbe" kind="function"><name>merge</name></member>
+    <member refid="class_list_1a1ca15b61836a2f27255d1d8baec4c654" kind="function"><name>mergeSort</name></member>
+    <member refid="class_list_1ac8aa25bd64067f7411552e482d72c36f" kind="function"><name>selectionSort</name></member>
+    <member refid="class_list_1a5f056da1661722bb64bf3edc7572c9c2" kind="function"><name>insertionSort</name></member>
+    <member refid="class_list_1a5c5e27671b21b3815d4e25b953c69454" kind="function"><name>List</name></member>
+    <member refid="class_list_1a47912745b8fdc670d6c71d86fe4aace5" kind="function"><name>List</name></member>
+    <member refid="class_list_1a247e8c2db3cc2b1d5e688ca8e58ca1ee" kind="function"><name>List</name></member>
+    <member refid="class_list_1adf64f5f688a32f56ee6ac60fbac84a8b" kind="function"><name>List</name></member>
+    <member refid="class_list_1a2b58189090f6e5ce52939c9195e59e85" kind="function"><name>~List</name></member>
+    <member refid="class_list_1adaf7d93d54b029790ccf98f521ec8837" kind="function"><name>size</name></member>
+    <member refid="class_list_1ad96bf379b8e75539b20ad30d10f10269" kind="function"><name>empty</name></member>
+    <member refid="class_list_1a1d2aa7b5544f5dee3e38f63bade6dc66" kind="function"><name>operator[]</name></member>
+    <member refid="class_list_1a07d4d9eac772dbdd50f59a34a107fc05" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1a9c99e57e47cceed01befeed89a81a531" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1a4d0d8420d56bb1ab184bfbeb190ee710" kind="function"><name>valid</name></member>
+    <member refid="class_list_1a7f9880a8bf94b206cee429d7bfa98001" kind="function"><name>disordered</name></member>
+    <member refid="class_list_1a147bb29ce3e2fc5b91755d19cb01926f" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1aedbaf0d1ca185cca29a93203e7313c0c" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1a5f138d05db90af9091585bd0931ee1ec" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1a08952d5b6d65436b3218c8ee8259e537" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1ab135e0b85bf76ef53e238e8a7873b50c" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1adca6bd9668e89893dfca69955db201bc" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1ac18f3e0b2ffaf2af0b7562077ebcdbcb" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1a658e4c73ab10ce85633ed69b61d042f6" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1ae5361994abae18e5f605cd13e2f2823c" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1aa7ae016bd7facc1dab73eb54f5cf3fda" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1aabb04ef20bd3a3cc9e226bdd72824f85" kind="function"><name>ListNodePosi</name></member>
+    <member refid="class_list_1afa020c0e05021aba5138f75e8cff9fd2" kind="function"><name>remove</name></member>
+    <member refid="class_list_1aad52d855405114c998d415c77eb78183" kind="function"><name>merge</name></member>
+    <member refid="class_list_1a5d88833fa5e0ee6cba3d1aef3eec0499" kind="function"><name>sort</name></member>
+    <member refid="class_list_1adcdf869b2506e2332052eff47afc8412" kind="function"><name>sort</name></member>
+    <member refid="class_list_1a04815240174e3eb63b6c9c6f647138ce" kind="function"><name>deduplicate</name></member>
+    <member refid="class_list_1a0c2aafff2b9e0ba54359dcb59f627f7a" kind="function"><name>uniquify</name></member>
+    <member refid="class_list_1a6066ea09838e1a42bec3098d18e85fda" kind="function"><name>reverse</name></member>
+    <member refid="class_list_1a6572713c78d660cd5f354588432be185" kind="function"><name>traverse</name></member>
+    <member refid="class_list_1a0e4c1352f77c6015725eecffe38e4c8c" kind="function"><name>traverse</name></member>
+  </compound>
+  <compound refid="struct_list_node" kind="struct"><name>ListNode</name>
+    <member refid="struct_list_node_1a935e06f21b246fb3a0987dd3f9d28528" kind="variable"><name>data</name></member>
+    <member refid="struct_list_node_1a3c892947fd2bc59a1f515246f88de8bf" kind="function"><name>ListNodePosi</name></member>
+    <member refid="struct_list_node_1ab6203dfb205f79c3b01c12f43c7c8fa9" kind="function"><name>ListNodePosi</name></member>
+    <member refid="struct_list_node_1a43a2fd9b239bd1bfe83e0306790417bf" kind="function"><name>ListNode</name></member>
+    <member refid="struct_list_node_1aa62392da1d049fcd1bbf38261bc4a00b" kind="function"><name>ListNode</name></member>
+    <member refid="struct_list_node_1a8a6b04c9589357c9c0a1341aba65e167" kind="function"><name>ListNodePosi</name></member>
+    <member refid="struct_list_node_1aba0c426df475de707b27780b50337ff1" kind="function"><name>ListNodePosi</name></member>
+  </compound>
+  <compound refid="class_queue" kind="class"><name>Queue</name>
+    <member refid="class_queue_1af50d72a629d7a94a769864fdab163420" kind="function"><name>enqueue</name></member>
+    <member refid="class_queue_1a036f122e9bf968c80ccd73b9d38017c0" kind="function"><name>dequeue</name></member>
+    <member refid="class_queue_1a20bfe4dbbb985a055631c50a19d451bc" kind="function"><name>front</name></member>
+  </compound>
+  <compound refid="class_stack" kind="class"><name>Stack</name>
+    <member refid="class_stack_1aa7f67cc5fdc6244f0903689f383f11ed" kind="function"><name>push</name></member>
+    <member refid="class_stack_1aa2ea0e8c3293648589dd734d52487408" kind="function"><name>pop</name></member>
+    <member refid="class_stack_1a5408496074d240c8b9bbc37d277e590f" kind="function"><name>top</name></member>
+  </compound>
+  <compound refid="class_vector" kind="class"><name>Vector</name>
+    <member refid="class_vector_1a2d13e843bb113b1dd10d2902c6044219" kind="variable"><name>_size</name></member>
+    <member refid="class_vector_1ae4ef5e9fdda4214b19696bfb984496f9" kind="variable"><name>_capacity</name></member>
+    <member refid="class_vector_1a2a0290969bd4070373689ad5ec7473f2" kind="variable"><name>_elem</name></member>
+    <member refid="class_vector_1ab10e8a359f270775ec46a748015c32c1" kind="function"><name>copyFrom</name></member>
+    <member refid="class_vector_1a25e5d1e79116318ebb92ad98a17ac275" kind="function"><name>expand</name></member>
+    <member refid="class_vector_1a21c14696d987344139f98dca2ec78664" kind="function"><name>shrink</name></member>
+    <member refid="class_vector_1a6e5808593d4d61536ba40e1508128111" kind="function"><name>bubble</name></member>
+    <member refid="class_vector_1a3c9a20adc23b97a0e394e65f271d9058" kind="function"><name>max</name></member>
+    <member refid="class_vector_1a59adb0e4dfea9ac3ec343b439bac3db6" kind="function"><name>partition</name></member>
+    <member refid="class_vector_1a42e6efced5c508e4c995f0ef457542ce" kind="function"><name>merge</name></member>
+    <member refid="class_vector_1a84409bdd044ccd541c644cc08bf9097b" kind="function"><name>Vector</name></member>
+    <member refid="class_vector_1a97049c8094531cb432db8b887b818663" kind="function"><name>Vector</name></member>
+    <member refid="class_vector_1aa9fb87b6e9fbca78ae1aacd38dd144ae" kind="function"><name>Vector</name></member>
+    <member refid="class_vector_1ae31cca6e0bfa4fbb443070cb050f1d59" kind="function"><name>Vector</name></member>
+    <member refid="class_vector_1a569f9d9488e6bca72f68105e9a4102db" kind="function"><name>Vector</name></member>
+    <member refid="class_vector_1afd524fac19e6d3d69db5198ffe2952b0" kind="function"><name>~Vector</name></member>
+    <member refid="class_vector_1a08c94a97eaf4e3e6abe595d43861e245" kind="function"><name>size</name></member>
+    <member refid="class_vector_1a9650adf10e940913fa06f149c4017c25" kind="function"><name>empty</name></member>
+    <member refid="class_vector_1a141a1ab83fe45afab035e8c906e470bb" kind="function"><name>disordered</name></member>
+    <member refid="class_vector_1ae213798ce2cf427358a5b31ae16ed0b0" kind="function"><name>find</name></member>
+    <member refid="class_vector_1a448353ec3f7e9d662cf7c7a8a25dca04" kind="function"><name>find</name></member>
+    <member refid="class_vector_1a261234c3b32fa7ada08c0e8e99569633" kind="function"><name>search</name></member>
+    <member refid="class_vector_1a702eaccc8487ca56dc5d05baf9cdfb53" kind="function"><name>search</name></member>
+    <member refid="class_vector_1a3777ec2fa8190ae1e020c2af282b7a64" kind="function"><name>operator[]</name></member>
+    <member refid="class_vector_1af97bad371294a807a69114d006d49256" kind="function"><name>operator=</name></member>
+    <member refid="class_vector_1a592d614579672696df8adb1e0a78c977" kind="function"><name>remove</name></member>
+    <member refid="class_vector_1a530be4a7f003d040fd3789384e699767" kind="function"><name>remove</name></member>
+    <member refid="class_vector_1a448aa635eb0024e875e4cee43d12cd6e" kind="function"><name>insert</name></member>
+    <member refid="class_vector_1a3b46c9e4d47b92c34a8c906f8581320d" kind="function"><name>insert</name></member>
+    <member refid="class_vector_1a770586f25289d2c07e57803d8fada81e" kind="function"><name>deduplicate</name></member>
+    <member refid="class_vector_1a1a7c9c96304c270c296f53ce85ac817f" kind="function"><name>uniquify</name></member>
+    <member refid="class_vector_1a34574f8372091eb762da92fdb0120fa7" kind="function"><name>sort</name></member>
+    <member refid="class_vector_1aeaec0d9f441116a1ac20ca5d0962c2af" kind="function"><name>sort</name></member>
+    <member refid="class_vector_1a239eec8daf7c505a947955088bd9d6a6" kind="function"><name>unsort</name></member>
+    <member refid="class_vector_1a544cba2d9fa43f2a58f9e81314cc2fe4" kind="function"><name>unsort</name></member>
+    <member refid="class_vector_1a7b6bc31bde56aaf172b97061fd099a1f" kind="function"><name>insertionSort</name></member>
+    <member refid="class_vector_1abb694ed02296df014f2160cf26e38bf3" kind="function"><name>insertionSort</name></member>
+    <member refid="class_vector_1a9f4eca8f2e01081553a9b19d7faf3986" kind="function"><name>selectionSort</name></member>
+    <member refid="class_vector_1acfe355f2045dad2f6d06b96527741b0c" kind="function"><name>selectionSort</name></member>
+    <member refid="class_vector_1ac32887865455ba3b042893b86b115ad4" kind="function"><name>mergeSort</name></member>
+    <member refid="class_vector_1a544ff4d7f93324d4202c1973bde2aa82" kind="function"><name>mergeSort</name></member>
+    <member refid="class_vector_1a8d6d5c4cff89adf2b4070a2bebea7fe2" kind="function"><name>bubbleSort</name></member>
+    <member refid="class_vector_1a4742d79a18a576cfdfb8288a79a42aab" kind="function"><name>bubbleSort</name></member>
+    <member refid="class_vector_1a5a75afa6fc2c15cc23d8417c41618769" kind="function"><name>quickSort</name></member>
+    <member refid="class_vector_1a484bf1c50c1f6b8f54196cc232919f5e" kind="function"><name>quickSort</name></member>
+    <member refid="class_vector_1a74220991a29e52693faac05328b82599" kind="function"><name>heapSort</name></member>
+    <member refid="class_vector_1ab72df765b363e0a12dd8243a72011c91" kind="function"><name>traverse</name></member>
+    <member refid="class_vector_1a6b39eb35d16b338d1169a298e85dd642" kind="function"><name>traverse</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_bin_tree_8h" kind="file"><name>BinTree.h</name>
+    <member refid="_bin_tree_8h_1a48f2c4176ceaf12835af2166616f2107" kind="define"><name>BinNodePosi</name></member>
+    <member refid="_bin_tree_8h_1ac5a062fc23478e745c63b451e8946326" kind="define"><name>stature</name></member>
+    <member refid="_bin_tree_8h_1a235e10efc1b9b747dae2da5324504bce" kind="define"><name>IsRoot</name></member>
+    <member refid="_bin_tree_8h_1ad035b1a2b71c26d94b1d0c0a9642353b" kind="define"><name>IsLChild</name></member>
+    <member refid="_bin_tree_8h_1a01f70a219a40c858449f567923f940db" kind="define"><name>IsRChild</name></member>
+    <member refid="_bin_tree_8h_1aad0240cb15b88528e7fe88d1a7cae0bf" kind="define"><name>HasParent</name></member>
+    <member refid="_bin_tree_8h_1aa09cbcce833189cc4e4cafc550ffc1a5" kind="define"><name>HasLChild</name></member>
+    <member refid="_bin_tree_8h_1acef84b348db625b19511ade8aed27995" kind="define"><name>HasRChild</name></member>
+    <member refid="_bin_tree_8h_1a0dfebd55ae5f873b8b3ffcb7d27662e2" kind="define"><name>HasChild</name></member>
+    <member refid="_bin_tree_8h_1ae648ac043afe11b2da2c0377312e2975" kind="define"><name>HasBothChild</name></member>
+    <member refid="_bin_tree_8h_1ae18654403bb30506d655e6be452b07a3" kind="define"><name>IsLeaf</name></member>
+    <member refid="_bin_tree_8h_1a86efe5e22aa8d92375403458cb70e1c5" kind="define"><name>sibling</name></member>
+    <member refid="_bin_tree_8h_1ac9ca41e368c739c3da60cf3758834652" kind="define"><name>uncle</name></member>
+    <member refid="_bin_tree_8h_1acc76b21ee007554b1e81b2887e29017a" kind="define"><name>FromParentTo</name></member>
+    <member refid="_bin_tree_8h_1abb6bd05cdb59fa8919c71b633e1bf39c" kind="enum"><name>RBColor</name></member>
+    <member refid="_bin_tree_8h_1abb6bd05cdb59fa8919c71b633e1bf39ca4c2b066fa67c57701ab221e9469145de" kind="enumvalue"><name>RB_RED</name></member>
+    <member refid="_bin_tree_8h_1abb6bd05cdb59fa8919c71b633e1bf39ca01e52e8a460dcfe9e7f37354ef1d1f0f" kind="enumvalue"><name>RB_BLACK</name></member>
+    <member refid="_bin_tree_8h_1aaa0d9b2b694816054c3846411b3f62f2" kind="function"><name>release</name></member>
+    <member refid="_bin_tree_8h_1a8d3318a380bce8d3f9b2017dd5757c84" kind="function"><name>travPre_I1</name></member>
+    <member refid="_bin_tree_8h_1abfc5a5de41a2ac70274993c5e2e5f7c8" kind="function"><name>visitAlongVine</name></member>
+    <member refid="_bin_tree_8h_1af3f63ad9e581cf16a6db6f534d3e5b68" kind="function"><name>travPre_I2</name></member>
+    <member refid="_bin_tree_8h_1ae4f12e2c15c13581ab9bb5de06db916b" kind="function"><name>travPre_R</name></member>
+    <member refid="_bin_tree_8h_1a2da494d8b8700edc8f1d9bdf90f78e34" kind="function"><name>goAlongVine</name></member>
+    <member refid="_bin_tree_8h_1aab38e650539289f2a519689e8810441b" kind="function"><name>travIn_I1</name></member>
+    <member refid="_bin_tree_8h_1a90a78392ecbd476c4acb3e387ec86edc" kind="function"><name>travIn_I2</name></member>
+    <member refid="_bin_tree_8h_1ae8dec797cfa858953fb4a10dd3f3ebc4" kind="function"><name>travIn_I3</name></member>
+    <member refid="_bin_tree_8h_1a21736c61babe2720ada8cc4932253dcf" kind="function"><name>travIn_I4</name></member>
+    <member refid="_bin_tree_8h_1aeb6d47465ecefcf23e6082affa3b479c" kind="function"><name>travIn_R</name></member>
+    <member refid="_bin_tree_8h_1acbb3efde28d6afa98588fbefc74755d1" kind="function"><name>removeAt</name></member>
+  </compound>
+  <compound refid="_list_8h" kind="file"><name>List.h</name>
+    <member refid="_list_8h_1aa0bbce631ee8289eacd0057c12302db2" kind="define"><name>ListNodePosi</name></member>
+    <member refid="_list_8h_1a0bdd5d1b30da058db8c759759e037ddb" kind="typedef"><name>Rank</name></member>
+    <member refid="_list_8h_1a231299e413293aab78d01e3d600f93d1" kind="variable"><name>nullptr</name></member>
+    <member refid="_list_8h_1a8f701410e3d5765536d4a71404773db9" kind="variable"><name>n</name></member>
+    <member refid="_list_8h_1aea3ee34289a41397855108ec6716bb37" kind="variable"><name>p</name></member>
+    <member refid="_list_8h_1a0f3cacbff904e29ac28270c196660354" kind="function"><name>while</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_queue_8h" kind="file"><name>Queue.h</name>
+  </compound>
+  <compound refid="_stack_8h" kind="file"><name>Stack.h</name>
+  </compound>
+  <compound refid="_vector_8h" kind="file"><name>Vector.h</name>
+    <member refid="_vector_8h_1a2af6bf843475565a9681f9449a3d5cc2" kind="define"><name>DEFAULT_CAPACITY</name></member>
+    <member refid="_vector_8h_1a0bdd5d1b30da058db8c759759e037ddb" kind="typedef"><name>Rank</name></member>
+    <member refid="_vector_8h_1a8a7740dcfe7d36400b5d8bcce1fd95d1" kind="variable"><name>MIN_OCCUPANCY</name></member>
+    <member refid="_vector_8h_1a5b36aba301d285a732513ec6e4cb35d3" kind="function"><name>binSearch</name></member>
+    <member refid="_vector_8h_1ad05178137a6bf2f958fb40f2da937a41" kind="function"><name>fibSearch</name></member>
+    <member refid="_vector_8h_1a7a31169d91859420f3e77f1a1c8b529f" kind="function"><name>simpleFibSearch</name></member>
+  </compound>
+  <compound refid="dir_df977a1037a29ee50b4437869bd188bb" kind="dir"><name>D:/CHY/Program/C++/DSA/5</name>
+  </compound>
+  <compound refid="dir_6965501a76a04631be8e8a69b62164d3" kind="dir"><name>D:/CHY/Program/C++/DSA/5/BinTree/BinTree</name>
+  </compound>
+  <compound refid="dir_aaa9ba8c3e6c64238e0052534262a952" kind="dir"><name>D:/CHY/Program/C++/DSA/5/BinTree</name>
+  </compound>
+  <compound refid="dir_78ed4d8da432331d329c22ea5ea28d93" kind="dir"><name>D:/CHY/Program/C++</name>
+  </compound>
+  <compound refid="dir_3994efd72ced79520539464fbf34ffba" kind="dir"><name>D:/CHY</name>
+  </compound>
+  <compound refid="dir_275089585c7fc1b5fd5d7d42c69cb1da" kind="dir"><name>D:</name>
+  </compound>
+  <compound refid="dir_3ebadd034fa262c7ab458a504fa32570" kind="dir"><name>D:/CHY/Program/C++/DSA</name>
+  </compound>
+  <compound refid="dir_7f47cdb9492296dfa77d72ebf8d80b82" kind="dir"><name>D:/CHY/Program</name>
+  </compound>
+</doxygenindex>
